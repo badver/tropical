@@ -25,6 +25,7 @@ public class Assets implements Disposable, AssetErrorListener {
     public AssetFonts fonts;
     public AssetSounds sounds;
     public AssetMusic music;
+    public AssetGirlBlack girlBlack;
     private AssetManager assetManager;
 
     // singleton: prevent instantiation from other classes
@@ -68,22 +69,9 @@ public class Assets implements Disposable, AssetErrorListener {
         assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
         assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
 
-
-        // start loading assets and wait until finished
-        // assetManager.finishLoading();
-
-//        Gdx.app.debug(TAG,
-//                "# of assets loaded: " + assetManager.getAssetNames().size);
-//        for (String a : assetManager.getAssetNames())
-//            Gdx.app.debug(TAG, "asset: " + a);
-//
 //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
-//
-//        // enable texture filtering for pixel smoothing
-//        for (Texture t : atlas.getTextures())
-//            t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-        // create game resource objects
+//        create game resource objects
 //        fonts = new AssetFonts();
 //        bunny = new AssetBunny(atlas);
 //        rock = new AssetRock(atlas);
@@ -92,6 +80,9 @@ public class Assets implements Disposable, AssetErrorListener {
 //        levelDecoration = new AssetLevelDecoration(atlas);
 //        sounds = new AssetSounds(assetManager);
 //        music = new AssetMusic(assetManager);
+
+
+//        girlBlack = new AssetGirlBlack(assetManager);
     }
 
     @Override
@@ -259,11 +250,12 @@ public class Assets implements Disposable, AssetErrorListener {
         public final AtlasRegion girlBlack;
         public final Animation animGirlBlack;
 
-        public AssetGirlBlack(TextureAtlas atlas) {
-            girlBlack = atlas.findRegion("girl_black_anim");
+        public AssetGirlBlack(AssetManager am) {
+            TextureAtlas textureAtlas=am.get("girl_black_anim", TextureAtlas.class);
+            girlBlack = textureAtlas.findRegion("girl_black_anim");
 
-            // Animation: Gold Coin
-            Array<AtlasRegion> regions = atlas.findRegions("girl_black_anim");
+            // Animation:
+            Array<AtlasRegion> regions = textureAtlas.findRegions("girl_black_anim");
             AtlasRegion region = regions.first();
             for (int i = 0; i < 10; i++)
                 regions.insert(0, region);
