@@ -1,0 +1,144 @@
+girl_orange_anim_0.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+020
+  rotate: false
+  xy: 201, 638
+  size: 195, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+018
+  rotate: false
+  xy: 400, 2
+  size: 197, 210
+  orig: 199, 210
+  offset: 0, 0
+  index: -1
+014
+  rotate: false
+  xy: 2, 214
+  size: 197, 210
+  orig: 199, 210
+  offset: 0, 0
+  index: -1
+010
+  rotate: false
+  xy: 599, 2
+  size: 195, 210
+  orig: 199, 210
+  offset: 3, 0
+  index: -1
+025
+  rotate: false
+  xy: 593, 426
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+021
+  rotate: false
+  xy: 398, 214
+  size: 195, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+019
+  rotate: false
+  xy: 201, 426
+  size: 195, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+015
+  rotate: false
+  xy: 2, 426
+  size: 197, 210
+  orig: 199, 210
+  offset: 0, 0
+  index: -1
+011
+  rotate: false
+  xy: 796, 2
+  size: 195, 210
+  orig: 199, 210
+  offset: 3, 0
+  index: -1
+009
+  rotate: false
+  xy: 595, 214
+  size: 193, 210
+  orig: 199, 210
+  offset: 5, 0
+  index: -1
+026
+  rotate: false
+  xy: 788, 426
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+022
+  rotate: false
+  xy: 790, 214
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+016
+  rotate: false
+  xy: 2, 638
+  size: 197, 210
+  orig: 199, 210
+  offset: 0, 0
+  index: -1
+012
+  rotate: false
+  xy: 2, 2
+  size: 197, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+027
+  rotate: false
+  xy: 593, 638
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+023
+  rotate: false
+  xy: 398, 426
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+017
+  rotate: false
+  xy: 201, 2
+  size: 197, 210
+  orig: 199, 210
+  offset: 0, 0
+  index: -1
+013
+  rotate: false
+  xy: 201, 214
+  size: 195, 210
+  orig: 199, 210
+  offset: 2, 0
+  index: -1
+028
+  rotate: false
+  xy: 788, 638
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1
+024
+  rotate: false
+  xy: 398, 638
+  size: 193, 210
+  orig: 199, 210
+  offset: 1, 0
+  index: -1

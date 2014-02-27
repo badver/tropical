@@ -1,0 +1,179 @@
+girl_black_anim_0.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+014
+  rotate: false
+  xy: 581, 202
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+010
+  rotate: false
+  xy: 195, 402
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+008
+  rotate: false
+  xy: 774, 2
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+052
+  rotate: false
+  xy: 581, 798
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+004
+  rotate: false
+  xy: 2, 802
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+000
+  rotate: false
+  xy: 2, 2
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+015
+  rotate: false
+  xy: 774, 202
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+011
+  rotate: false
+  xy: 195, 602
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+009
+  rotate: false
+  xy: 195, 202
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+053
+  rotate: false
+  xy: 774, 600
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+005
+  rotate: false
+  xy: 195, 2
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+001
+  rotate: false
+  xy: 2, 202
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+047
+  rotate: false
+  xy: 388, 602
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+016
+  rotate: false
+  xy: 388, 402
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+012
+  rotate: false
+  xy: 195, 802
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+054
+  rotate: false
+  xy: 774, 798
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+006
+  rotate: false
+  xy: 388, 2
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+050
+  rotate: false
+  xy: 774, 402
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+002
+  rotate: false
+  xy: 2, 402
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+048
+  rotate: false
+  xy: 388, 800
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+013
+  rotate: false
+  xy: 388, 202
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+007
+  rotate: false
+  xy: 581, 2
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+051
+  rotate: false
+  xy: 581, 600
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+003
+  rotate: false
+  xy: 2, 602
+  size: 191, 198
+  orig: 199, 210
+  offset: 4, 11
+  index: -1
+049
+  rotate: false
+  xy: 581, 402
+  size: 191, 196
+  orig: 199, 210
+  offset: 4, 11
+  index: -1

@@ -1,0 +1,199 @@
+package ru.badver.jff.slotgame.screens;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import ru.badver.jff.slotgame.game.Assets;
+import ru.badver.jff.slotgame.screens.transitions.ScreenTransition;
+import ru.badver.jff.slotgame.screens.transitions.ScreenTransitionFade;
+import ru.badver.jff.slotgame.util.AudioManager;
+import ru.badver.jff.slotgame.util.Constants;
+import ru.badver.jff.slotgame.util.GameState;
+import ru.badver.jff.slotgame.util.States;
+
+public class LoadScreen extends AbstractGameScreen {
+
+    private static final String TAG = "LOAD SCREEN ";
+    private TextureAtlas textureAtlas;
+    private Stage stage;
+    private AssetManager loadScreenAssetManager;
+    private float loadPercent;
+    private OrthographicCamera camera;
+
+    public LoadScreen(DirectedGame game, AssetManager loadScreenAssetManager) {
+        super(game);
+        this.loadScreenAssetManager = loadScreenAssetManager;
+        textureAtlas = loadScreenAssetManager.get("images/loadscreen.atlas", TextureAtlas.class);
+    }
+
+    private void loadGameAssets() {
+        Assets.instance.init(new AssetManager());
+    }
+
+    @Override
+    public InputProcessor getInputProcessor() {
+        return null;
+    }
+
+    @Override
+    public void render(float deltaTime) {
+        // clear screen
+        Gdx.gl.glClearColor(0f, 0f, 0f, 1f);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        // get progress of loading asserts
+        if (loadPercent != 1) {
+            loadPercent = Assets.instance.getProgress();
+            Gdx.app.debug(TAG, "Game assets loaded, % " + loadPercent);
+        }
+
+        stage.act(deltaTime);
+        stage.draw();
+
+        // if finish loading assets set new screen
+        if (loadPercent == 1 && GameState.getInstance().getState() == States.LOADING) {
+            GameState.instance.setState(States.LOADED);
+            ScreenTransition transition = ScreenTransitionFade.init(2.75f);
+            game.setScreen(new GameScreen(game), transition);
+        }
+    }
+
+    @Override
+    public void resize(int width, int height) {
+        camera.viewportHeight = height; //set the viewport
+        camera.viewportWidth = width;
+
+        if (Constants.VIEWPORT_WIDTH / camera.viewportWidth < Constants.VIEWPORT_HEIGHT / camera.viewportHeight) {
+            //set the right zoom direct
+            camera.zoom = Constants.VIEWPORT_HEIGHT / camera.viewportHeight;
+        } else {
+            //set the right zoom direct
+            camera.zoom = Constants.VIEWPORT_WIDTH / camera.viewportWidth;
+        }
+        camera.update();
+    }
+
+    @Override
+    public void show() {
+        stage = new Stage(Constants.VIEWPORT_WIDTH, Constants.VIEWPORT_HEIGHT); // set virtual space
+        camera = new OrthographicCamera(); // set camera
+        camera.position.set(stage.getWidth() / 2, stage.getHeight() / 2, 0); // center camera
+        stage.setCamera(camera); // assign camera to stage
+
+        // place layers
+        buildStage();
+
+        // background music on Load Screen
+        Music loadMusic = loadScreenAssetManager.get("music/music.ogg", Music.class);
+        AudioManager.instance.play(loadMusic);
+
+        // first time loading
+        if (GameState.instance.getState() == States.START) {
+            loadGameAssets();
+        }
+        GameState.instance.setState(States.LOADING);
+    }
+
+    @Override
+    public void hide() {
+        stage.dispose();
+        textureAtlas.dispose();
+        loadScreenAssetManager.dispose();
+    }
+
+    @Override
+    public void pause() {
+        // TODO what to do if pause?
+    }
+
+    @Override
+    public void resume() {
+        Gdx.app.debug(TAG, "resume");
+        if (GameState.instance.getState() != States.LOADING) {
+            super.resume();
+        }
+    }
+
+    private void buildStage() {
+        // Layers
+        LoadBackground backgroundImage = new LoadBackground();
+
+        LoadBar loadBarImage = new LoadBar();
+        loadBarImage.setPosition(stage.getWidth() / 2 - loadBarImage.getWidth() / 2, 3);
+
+        LoadBarFill loadBarFill = new LoadBarFill(loadBarImage.getWidth() - 30);
+        loadBarFill.setPosition(loadBarImage.getX() + 15, loadBarImage.getY() + 10);
+
+        stage.clear();
+
+        // add layers
+        stage.addActor(backgroundImage);
+        stage.addActor(loadBarImage);
+        stage.addActor(loadBarFill);
+    }
+
+
+    private class LoadBackground extends Actor {
+        TextureRegion loadBg;
+
+        public LoadBackground() {
+            super();
+            loadBg = new TextureRegion(textureAtlas.findRegion("loadscreen"));
+            setSize(loadBg.getRegionWidth(), loadBg.getRegionHeight());
+        }
+
+        @Override
+        public void draw(Batch batch, float parentAlpha) {
+            super.draw(batch, parentAlpha);
+            batch.draw(loadBg, 0, 0);
+        }
+    }
+
+    private class LoadBar extends Actor {
+        TextureRegion imgLoadbar;
+
+        public LoadBar() {
+            super();
+            imgLoadbar = new TextureRegion(textureAtlas.findRegion("loadbar"));
+            setSize(imgLoadbar.getRegionWidth(), imgLoadbar.getRegionHeight());
+        }
+
+        @Override
+        public void draw(Batch batch, float parentAlpha) {
+            super.draw(batch, parentAlpha);
+            batch.draw(imgLoadbar, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(), getScaleY(), getRotation());
+        }
+    }
+
+    private class LoadBarFill extends Actor {
+        TextureRegion imgLoadbarFill;
+        float width;
+
+        public LoadBarFill(float width) {
+            super();
+            imgLoadbarFill = new TextureRegion(textureAtlas.findRegion("loadelement"));
+            this.width = width;
+            setSize(imgLoadbarFill.getRegionWidth(), imgLoadbarFill.getRegionHeight());
+        }
+
+        @Override
+        public void act(float delta) {
+            super.act(delta);
+            setWidth(width * loadPercent);
+        }
+
+        @Override
+        public void draw(Batch batch, float parentAlpha) {
+            super.draw(batch, parentAlpha);
+            batch.draw(imgLoadbarFill, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(), getScaleY(), getRotation());
+        }
+    }
+}
