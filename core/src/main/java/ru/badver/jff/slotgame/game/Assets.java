@@ -37,6 +37,13 @@ public class Assets implements Disposable, AssetErrorListener {
         return assetManager.getProgress();
     }
 
+    public void finishInit() {
+        if (assetManager.getProgress() >= 1) {
+            music = new AssetMusic(assetManager);
+            girlBlack = new AssetGirlBlack(assetManager);
+        }
+    }
+
     public void init(AssetManager assetManager) {
         this.assetManager = assetManager;
 
@@ -69,6 +76,8 @@ public class Assets implements Disposable, AssetErrorListener {
         assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
         assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
 
+        assetManager.load("music/music.ogg", Music.class);
+
 //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
 
 //        create game resource objects
@@ -82,7 +91,6 @@ public class Assets implements Disposable, AssetErrorListener {
 //        music = new AssetMusic(assetManager);
 
 
-//        girlBlack = new AssetGirlBlack(assetManager);
     }
 
     @Override
@@ -120,8 +128,7 @@ public class Assets implements Disposable, AssetErrorListener {
         public final Music song01;
 
         public AssetMusic(AssetManager am) {
-            song01 = am.get("music/keith303_-_brand_new_highscore.mp3",
-                    Music.class);
+            song01 = am.get("music/music.ogg", Music.class);
         }
     }
 
@@ -251,14 +258,15 @@ public class Assets implements Disposable, AssetErrorListener {
         public final Animation animGirlBlack;
 
         public AssetGirlBlack(AssetManager am) {
-            TextureAtlas textureAtlas=am.get("girl_black_anim", TextureAtlas.class);
+            TextureAtlas textureAtlas = am.get("images/girl_black_anim_0.txt", TextureAtlas.class);
             girlBlack = textureAtlas.findRegion("girl_black_anim");
 
             // Animation:
-            Array<AtlasRegion> regions = textureAtlas.findRegions("girl_black_anim");
+            Array<AtlasRegion> regions = textureAtlas.findRegions("0");
             AtlasRegion region = regions.first();
             for (int i = 0; i < 10; i++)
                 regions.insert(0, region);
+
             animGirlBlack = new Animation(1.0f / 20.0f, regions,
                     Animation.LOOP_PINGPONG);
         }

@@ -2,6 +2,7 @@ package ru.badver.jff.slotgame.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -10,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import ru.badver.jff.slotgame.game.Assets;
 import ru.badver.jff.slotgame.game.GameController;
+import ru.badver.jff.slotgame.util.AudioManager;
 import ru.badver.jff.slotgame.util.Constants;
 
 public class GameScreen extends AbstractGameScreen {
@@ -81,25 +83,9 @@ public class GameScreen extends AbstractGameScreen {
 
         buildStage();
 
-    }
-
-    private void buildStage() {
-        // Layers
-        //        LoadBarFill loadBarFill = new LoadBarFill(loadBarImage.getWidth() - 30);
-        //        loadBarFill.setPosition(loadBarImage.getX() + 15, loadBarImage.getY() + 10);
-        GirlBlack girlBlack = new GirlBlack();
-
-
-        stage.clear();
-
-        // add layers
-        stage.addActor(girlBlack);
-
-    }
-
-    @Override
-    public void dispose() {
-        super.dispose();
+        // background music on Load Screen
+        Music loadMusic = Assets.instance.music.song01;
+        AudioManager.instance.play(loadMusic);
     }
 
     @Override
@@ -122,14 +108,25 @@ public class GameScreen extends AbstractGameScreen {
         paused = false;
     }
 
+    @Override
+    public void dispose() {
+        super.dispose();
+    }
+
+    private void buildStage() {
+        // Layers
+        //        LoadBarFill loadBarFill = new LoadBarFill(loadBarImage.getWidth() - 30);
+        //        loadBarFill.setPosition(loadBarImage.getX() + 15, loadBarImage.getY() + 10);
+        GirlBlack girlBlack = new GirlBlack();
+
+        stage.clear();
+
+        // add layers
+        stage.addActor(girlBlack);
+    }
+
     private class GirlBlack extends Actor {
         private float stateTime;
-
-        @Override
-        public void act(float delta) {
-            super.act(delta);
-            stateTime += delta;
-        }
 
         @Override
         public void draw(Batch batch, float parentAlpha) {
@@ -141,6 +138,12 @@ public class GameScreen extends AbstractGameScreen {
 
             batch.draw(reg, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(),
                     getScaleY(), getRotation(), true);
+        }
+
+        @Override
+        public void act(float delta) {
+            super.act(delta);
+            stateTime += delta;
         }
     }
 }

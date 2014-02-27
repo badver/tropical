@@ -61,6 +61,7 @@ public class LoadScreen extends AbstractGameScreen {
         // if finish loading assets set new screen
         if (loadPercent == 1 && GameState.getInstance().getState() == States.LOADING) {
             GameState.instance.setState(States.LOADED);
+            Assets.instance.finishInit();
             ScreenTransition transition = ScreenTransitionFade.init(2.75f);
             game.setScreen(new GameScreen(game), transition);
         }
