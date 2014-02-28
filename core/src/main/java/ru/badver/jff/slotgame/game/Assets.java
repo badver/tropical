@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 
@@ -18,7 +19,6 @@ public class Assets implements Disposable, AssetErrorListener {
     public static final String TAG = "ASSETS ";
     public static final Assets instance = new Assets();
     public AssetBunny bunny;
-    public AssetRock rock;
     public AssetGoldCoin goldCoin;
     public AssetFeather feather;
     public AssetLevelDecoration levelDecoration;
@@ -32,65 +32,75 @@ public class Assets implements Disposable, AssetErrorListener {
     private Assets() {
     }
 
+    /**
+     * update load progress and return progress from  0.0f to 1.0f ( 0% - 100% )
+     *
+     * @return
+     */
     public float getProgress() {
         assetManager.update();
         return assetManager.getProgress();
     }
 
+    /**
+     * Call this method when all data loaded, this finishes creating assets
+     */
     public void finishInit() {
         if (assetManager.getProgress() >= 1) {
             music = new AssetMusic(assetManager);
             girlBlack = new AssetGirlBlack(assetManager);
+
+            //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
+
+            //        create game resource objects
+            //        fonts = new AssetFonts();
+            //        bunny = new AssetBunny(atlas);
+            //        rock = new AssetRock(atlas);
+            //        goldCoin = new AssetGoldCoin(atlas);
+            //        feather = new AssetFeather(atlas);
+            //        levelDecoration = new AssetLevelDecoration(atlas);
+            //        sounds = new AssetSounds(assetManager);
+            //        music = new AssetMusic(assetManager);
         }
     }
 
+    /**
+     * Prepare loading assets.
+     * to continue load, call getProgress() until it'll returns 1.0f (it means 100% load)
+     *
+     * @param assetManager
+     */
     public void init(AssetManager assetManager) {
         this.assetManager = assetManager;
 
         // set asset manager error handler
         assetManager.setErrorListener(this);
-
         Gdx.app.debug(TAG, "Start loading");
 
-        // load texture atlas
-        //assetManager.load(Constants.GAME_ATLAS, TextureAtlas.class);
-
-        // load sounds
-        for (int i = 1; i <= 5; i++) {
-            assetManager.load("sounds/bar/bar_start_" + i + ".ogg", Sound.class);
-            assetManager.load("sounds/bar/bar_stop_" + i + ".ogg", Sound.class);
-        }
-
-        assetManager.load("images/girl_black_anim_0.txt", TextureAtlas.class);
-        assetManager.load("images/girl_black_anim_1.txt", TextureAtlas.class);
-        assetManager.load("images/girl_black_anim_2.txt", TextureAtlas.class);
-
-        assetManager.load("images/girl_orange_anim_0.atlas", TextureAtlas.class);
-        assetManager.load("images/girl_orange_anim_1.atlas", TextureAtlas.class);
-        assetManager.load("images/girl_orange_anim_2.atlas", TextureAtlas.class);
-
-        assetManager.load("images/girl_red_anim_0.atlas", TextureAtlas.class);
-        assetManager.load("images/girl_red_anim_1.atlas", TextureAtlas.class);
-        assetManager.load("images/girl_red_anim_2.atlas", TextureAtlas.class);
-
-        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
-        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
-
+        // load music
         assetManager.load("music/music.ogg", Music.class);
 
-//        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
+//        // load sounds
+//        for (int i = 1; i <= 5; i++) {
+//            assetManager.load("sounds/bar/bar_start_" + i + ".ogg", Sound.class);
+//            assetManager.load("sounds/bar/bar_stop_" + i + ".ogg", Sound.class);
+//        }
 
-//        create game resource objects
-//        fonts = new AssetFonts();
-//        bunny = new AssetBunny(atlas);
-//        rock = new AssetRock(atlas);
-//        goldCoin = new AssetGoldCoin(atlas);
-//        feather = new AssetFeather(atlas);
-//        levelDecoration = new AssetLevelDecoration(atlas);
-//        sounds = new AssetSounds(assetManager);
-//        music = new AssetMusic(assetManager);
-
-
+        // load texture atlases
+        assetManager.load("images/girl_black_anim_0.txt", TextureAtlas.class);
+//        assetManager.load("images/girl_black_anim_1.txt", TextureAtlas.class);
+//        assetManager.load("images/girl_black_anim_2.txt", TextureAtlas.class);
+//
+//        assetManager.load("images/girl_orange_anim_0.atlas", TextureAtlas.class);
+//        assetManager.load("images/girl_orange_anim_1.atlas", TextureAtlas.class);
+//        assetManager.load("images/girl_orange_anim_2.atlas", TextureAtlas.class);
+//
+//        assetManager.load("images/girl_red_anim_0.atlas", TextureAtlas.class);
+//        assetManager.load("images/girl_red_anim_1.atlas", TextureAtlas.class);
+//        assetManager.load("images/girl_red_anim_2.atlas", TextureAtlas.class);
+//
+//        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
+//        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
     }
 
     @Override
@@ -107,6 +117,9 @@ public class Assets implements Disposable, AssetErrorListener {
         fonts.defaultBig.dispose();
     }
 
+    /**
+     * contains game sounds
+     */
     public class AssetSounds {
         public final Sound jump;
         public final Sound jumpWithFeather;
@@ -124,6 +137,9 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
+    /**
+     * contains game music
+     */
     public class AssetMusic {
         public final Music song01;
 
@@ -132,6 +148,9 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
+    /**
+     * contains game fonts
+     */
     public class AssetFonts {
         public final BitmapFont defaultSmall;
         public final BitmapFont defaultNormal;
@@ -139,12 +158,9 @@ public class Assets implements Disposable, AssetErrorListener {
 
         public AssetFonts() {
             // create three fonts using Libgdx's 15px bitmap font
-            defaultSmall = new BitmapFont(
-                    Gdx.files.internal("images/arial-15.fnt"), true);
-            defaultNormal = new BitmapFont(
-                    Gdx.files.internal("images/arial-15.fnt"), true);
-            defaultBig = new BitmapFont(
-                    Gdx.files.internal("images/arial-15.fnt"), true);
+            defaultSmall = new BitmapFont(false);
+            defaultNormal = new BitmapFont(false);
+            defaultBig = new BitmapFont(false);
 
             // set font sizes
             defaultSmall.setScale(0.75f);
@@ -161,6 +177,7 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
+    // just for example
     public class AssetBunny {
         public final AtlasRegion head;
         public final Animation animNormal;
@@ -196,16 +213,7 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
-    public class AssetRock {
-        public final AtlasRegion edge;
-        public final AtlasRegion middle;
-
-        public AssetRock(TextureAtlas atlas) {
-            edge = atlas.findRegion("rock_edge");
-            middle = atlas.findRegion("rock_middle");
-        }
-    }
-
+    // just for example
     public class AssetLevelDecoration {
         public final AtlasRegion cloud01;
         public final AtlasRegion cloud02;
@@ -228,6 +236,7 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
+    // example of single texture
     public class AssetFeather {
         public final AtlasRegion feather;
 
@@ -236,6 +245,7 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
+    // example texture and animation
     public class AssetGoldCoin {
         public final AtlasRegion goldCoin;
         public final Animation animGoldCoin;
@@ -253,22 +263,25 @@ public class Assets implements Disposable, AssetErrorListener {
         }
     }
 
+    /**
+     * animated black hair girl
+     */
     public class AssetGirlBlack {
-        public final AtlasRegion girlBlack;
-        public final Animation animGirlBlack;
+        public final TextureRegion girlBlack;
+        //        public final Animation animGirlBlack;
 
         public AssetGirlBlack(AssetManager am) {
             TextureAtlas textureAtlas = am.get("images/girl_black_anim_0.txt", TextureAtlas.class);
-            girlBlack = textureAtlas.findRegion("girl_black_anim");
+            girlBlack = textureAtlas.findRegion("014");
 
             // Animation:
-            Array<AtlasRegion> regions = textureAtlas.findRegions("0");
-            AtlasRegion region = regions.first();
-            for (int i = 0; i < 10; i++)
-                regions.insert(0, region);
-
-            animGirlBlack = new Animation(1.0f / 20.0f, regions,
-                    Animation.LOOP_PINGPONG);
+            //            Array<AtlasRegion> regions = textureAtlas.findRegions("0");
+            //            AtlasRegion region = regions.first();
+            //            for (int i = 0; i < 10; i++)
+            //                regions.insert(0, region);
+            //
+            //            animGirlBlack = new Animation(1.0f / 20.0f, regions,
+            //                    Animation.LOOP_PINGPONG);
         }
     }
 }

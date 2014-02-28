@@ -2,17 +2,18 @@ package ru.badver.jff.slotgame.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
-import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import ru.badver.jff.slotgame.game.Assets;
 import ru.badver.jff.slotgame.game.GameController;
-import ru.badver.jff.slotgame.util.AudioManager;
 import ru.badver.jff.slotgame.util.Constants;
+import ru.badver.jff.slotgame.util.GameState;
+import ru.badver.jff.slotgame.util.States;
 
 public class GameScreen extends AbstractGameScreen {
 
@@ -44,7 +45,7 @@ public class GameScreen extends AbstractGameScreen {
         }
 
         // clear screen
-        Gdx.gl.glClearColor(0f, 0f, 0f, 1f);
+        Gdx.gl.glClearColor(0.9f, 0.9f, 0.9f, 1f);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         stage.act(deltaTime);
@@ -83,9 +84,11 @@ public class GameScreen extends AbstractGameScreen {
 
         buildStage();
 
-        // background music on Load Screen
-        Music loadMusic = Assets.instance.music.song01;
-        AudioManager.instance.play(loadMusic);
+        // background music
+        //        Music loadMusic = Assets.instance.music.song01;
+        //        AudioManager.instance.play(loadMusic);
+
+        GameState.instance.setState(States.GAME);
     }
 
     @Override
@@ -115,10 +118,11 @@ public class GameScreen extends AbstractGameScreen {
 
     private void buildStage() {
         // Layers
-        //        LoadBarFill loadBarFill = new LoadBarFill(loadBarImage.getWidth() - 30);
-        //        loadBarFill.setPosition(loadBarImage.getX() + 15, loadBarImage.getY() + 10);
         GirlBlack girlBlack = new GirlBlack();
+        //        girlBlack.setPosition(10, 10);
+        //        girlBlack.setVisible(true);
 
+        // clear stage
         stage.clear();
 
         // add layers
@@ -127,23 +131,34 @@ public class GameScreen extends AbstractGameScreen {
 
     private class GirlBlack extends Actor {
         private float stateTime;
+        private float angle;
+        private TextureRegion reg;
+
+        public GirlBlack() {
+            super();
+            reg = Assets.instance.girlBlack.girlBlack;
+            setSize(reg.getRegionWidth(), reg.getRegionHeight());
+            setOrigin(reg.getRegionWidth() / 2, reg.getRegionHeight() / 2);
+            angle=0;
+        }
 
         @Override
         public void draw(Batch batch, float parentAlpha) {
             super.draw(batch, parentAlpha);
 
-            TextureRegion reg = null;
-
-            reg = Assets.instance.girlBlack.animGirlBlack.getKeyFrame(stateTime, true);
+            // reg = Assets.instance.girlBlack.animGirlBlack.getKeyFrame(stateTime, true);
 
             batch.draw(reg, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(),
-                    getScaleY(), getRotation(), true);
+                    getScaleY(), getRotation());
         }
 
         @Override
         public void act(float delta) {
             super.act(delta);
             stateTime += delta;
+            angle = MathUtils.clamp(++angle, 0f, 360f);
+            setRotation(angle);
+
         }
     }
 }

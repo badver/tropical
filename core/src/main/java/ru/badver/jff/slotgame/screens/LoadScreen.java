@@ -31,7 +31,7 @@ public class LoadScreen extends AbstractGameScreen {
     public LoadScreen(DirectedGame game, AssetManager loadScreenAssetManager) {
         super(game);
         this.loadScreenAssetManager = loadScreenAssetManager;
-        textureAtlas = loadScreenAssetManager.get("images/loadscreen.atlas", TextureAtlas.class);
+        textureAtlas = loadScreenAssetManager.get("images/loadscreen/loadscreen.atlas", TextureAtlas.class);
     }
 
     private void loadGameAssets() {
@@ -52,17 +52,17 @@ public class LoadScreen extends AbstractGameScreen {
         // get progress of loading asserts
         if (loadPercent != 1) {
             loadPercent = Assets.instance.getProgress();
-            Gdx.app.debug(TAG, "Game assets loaded, % " + loadPercent);
+            Gdx.app.debug(TAG, "Game assets loaded, % " + loadPercent * 100);
         }
 
         stage.act(deltaTime);
         stage.draw();
 
-        // if finish loading assets set new screen
+        // if finish loading assets, set new screen
         if (loadPercent == 1 && GameState.getInstance().getState() == States.LOADING) {
             GameState.instance.setState(States.LOADED);
             Assets.instance.finishInit();
-            ScreenTransition transition = ScreenTransitionFade.init(2.75f);
+            ScreenTransition transition = ScreenTransitionFade.init(1.0f);
             game.setScreen(new GameScreen(game), transition);
         }
     }
@@ -143,7 +143,7 @@ public class LoadScreen extends AbstractGameScreen {
 
 
     private class LoadBackground extends Actor {
-        TextureRegion loadBg;
+        private TextureRegion loadBg;
 
         public LoadBackground() {
             super();
@@ -159,7 +159,7 @@ public class LoadScreen extends AbstractGameScreen {
     }
 
     private class LoadBar extends Actor {
-        TextureRegion imgLoadbar;
+        private TextureRegion imgLoadbar;
 
         public LoadBar() {
             super();
@@ -170,18 +170,19 @@ public class LoadScreen extends AbstractGameScreen {
         @Override
         public void draw(Batch batch, float parentAlpha) {
             super.draw(batch, parentAlpha);
-            batch.draw(imgLoadbar, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(), getScaleY(), getRotation());
+            batch.draw(imgLoadbar, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(),
+                    getScaleY(), getRotation());
         }
     }
 
     private class LoadBarFill extends Actor {
-        TextureRegion imgLoadbarFill;
         float width;
+        private TextureRegion imgLoadbarFill;
 
         public LoadBarFill(float width) {
             super();
-            imgLoadbarFill = new TextureRegion(textureAtlas.findRegion("loadelement"));
             this.width = width;
+            imgLoadbarFill = new TextureRegion(textureAtlas.findRegion("loadelement"));
             setSize(imgLoadbarFill.getRegionWidth(), imgLoadbarFill.getRegionHeight());
         }
 
@@ -194,7 +195,8 @@ public class LoadScreen extends AbstractGameScreen {
         @Override
         public void draw(Batch batch, float parentAlpha) {
             super.draw(batch, parentAlpha);
-            batch.draw(imgLoadbarFill, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(), getScaleY(), getRotation());
+            batch.draw(imgLoadbarFill, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(),
+                    getScaleY(), getRotation());
         }
     }
 }

@@ -1,7 +1,7 @@
 package ru.badver.jff.slotgame.util;
 
 public class Constants {
-    public static final String LOADSCREEN = "images/loadscreen.atlas";
+    public static final String LOADSCREEN = "images/loadscreen/loadscreen.atlas";
     public static final String PREFERENCES = "slot.pref";
     public static final String GAME_ATLAS = "images/game.atlas";
     public static final String TITLE = "Tropical Party";

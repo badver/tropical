@@ -31,11 +31,11 @@ public abstract class AbstractGameScreen implements Screen {
         Gdx.app.debug("AbstractGS ", "resume");
         States state = GameState.instance.getState();
         if (state != States.START && state != States.LOADING) {
-            Assets.instance.init(new AssetManager());
+//            Assets.instance.init(new AssetManager());
         }
     }
 
     public void dispose() {
-        Assets.instance.dispose();
+//        Assets.instance.dispose();
     }
 }
