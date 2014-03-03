@@ -1,4 +1,4 @@
-package ru.badver.jff.slotgame.game;
+package ru.badver.jff.slotgame.game.assets;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetDescriptor;
@@ -11,13 +11,13 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 
 public class Assets implements Disposable, AssetErrorListener {
     public static final String TAG = "ASSETS ";
     public static final Assets instance = new Assets();
+
     public AssetBunny bunny;
     public AssetGoldCoin goldCoin;
     public AssetFeather feather;
@@ -26,6 +26,8 @@ public class Assets implements Disposable, AssetErrorListener {
     public AssetSounds sounds;
     public AssetMusic music;
     public AssetGirlBlack girlBlack;
+    public AssetGameBackground gameBackgroung;
+
     private AssetManager assetManager;
 
     // singleton: prevent instantiation from other classes
@@ -49,6 +51,7 @@ public class Assets implements Disposable, AssetErrorListener {
         if (assetManager.getProgress() >= 1) {
             music = new AssetMusic(assetManager);
             girlBlack = new AssetGirlBlack(assetManager);
+            gameBackgroung = new AssetGameBackground(assetManager);
 
             //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
 
@@ -80,7 +83,7 @@ public class Assets implements Disposable, AssetErrorListener {
         // load music
         assetManager.load("music/music.ogg", Music.class);
 
-        //        // load sounds
+        // load sounds
         //        for (int i = 1; i <= 5; i++) {
         //            assetManager.load("sounds/bar/bar_start_" + i + ".ogg", Sound.class);
         //            assetManager.load("sounds/bar/bar_stop_" + i + ".ogg", Sound.class);
@@ -99,8 +102,8 @@ public class Assets implements Disposable, AssetErrorListener {
         //        assetManager.load("images/girl_red_anim_1.atlas", TextureAtlas.class);
         //        assetManager.load("images/girl_red_anim_2.atlas", TextureAtlas.class);
         //
-        //        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
-        //        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
+        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
+        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
     }
 
     @Override
@@ -260,28 +263,6 @@ public class Assets implements Disposable, AssetErrorListener {
                 regions.insert(0, region);
             animGoldCoin = new Animation(1.0f / 20.0f, regions,
                     Animation.LOOP_PINGPONG);
-        }
-    }
-
-    /**
-     * animated black hair girl
-     */
-    public class AssetGirlBlack {
-        public final TextureRegion girlBlack;
-        public final Animation animGirlBlack;
-
-        public AssetGirlBlack(AssetManager am) {
-            TextureAtlas textureAtlas = am.get("images/girl_black_anim_0.txt", TextureAtlas.class);
-            girlBlack = textureAtlas.findRegion("000");
-
-            // Animation:
-            Array<AtlasRegion> regions = textureAtlas.findRegions("000");
-            AtlasRegion region = regions.first();
-            for (int i = 0; i < 10; i++)
-                regions.insert(0, region);
-
-            animGirlBlack = new Animation(1.0f / 20.0f, regions,
-                    Animation.LOOP);
         }
     }
 }

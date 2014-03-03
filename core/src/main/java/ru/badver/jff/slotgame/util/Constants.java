@@ -8,6 +8,6 @@ public class Constants {
     public static final int VIEWPORT_WIDTH = 800;
     public static final int VIEWPORT_HEIGHT = 600;
 
-    public static final int SCREEN_WIDTH = 640 ;
-    public static final int SCREEN_HEIGHT = 480;
+    public static final int SCREEN_WIDTH = 1024 ;
+    public static final int SCREEN_HEIGHT = 768;
 }

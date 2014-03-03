@@ -2,7 +2,7 @@ mainfon_1.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-frame_for_mainfon
+frame_mainfon
   rotate: false
   xy: 0, 0
   size: 1024, 768
