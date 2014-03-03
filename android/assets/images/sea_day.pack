@@ -1,0 +1,2186 @@
+
+sea_day.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 14
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 15
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 16
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 17
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 18
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 19
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 20
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 21
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 22
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 23
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 24
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 25
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 26
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 27
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 28
+
+sea_day2.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 29
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 30
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 32
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 33
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 34
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 35
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 36
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 37
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 38
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 39
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 40
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 41
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 42
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 43
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 44
+
+sea_day3.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 45
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 46
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 47
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 48
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 50
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 51
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 52
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 53
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 54
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 55
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 56
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 57
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 58
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 59
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 60
+
+sea_day4.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 61
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 62
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 63
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 64
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 65
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 66
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 68
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 69
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 70
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 71
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 72
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 73
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 74
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 75
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 76
+
+sea_day5.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 77
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 78
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 79
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 80
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 81
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 82
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 83
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 84
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 104
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 105
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 106
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 107
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 108
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 109
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 110
+
+sea_day6.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 111
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 112
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 113
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 114
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 115
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 116
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 117
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 118
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 119
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 120
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 13
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 31
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 49
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 67
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 85
+
+sea_day7.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 103
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 121
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 139
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 157
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 175
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 193
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 211
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 229
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 247
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 265
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 122
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 123
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 124
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 125
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 126
+
+sea_day8.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 127
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 128
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 129
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 130
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 131
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 132
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 133
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 134
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 135
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 136
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 137
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 138
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 140
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 141
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 142
+
+sea_day9.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 143
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 144
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 145
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 146
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 147
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 148
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 149
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 150
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 151
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 152
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 153
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 154
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 155
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 156
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 158
+
+sea_day10.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 159
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 160
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 161
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 162
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 163
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 164
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 165
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 166
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 167
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 168
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 169
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 170
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 171
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 172
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 173
+
+sea_day11.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 174
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 176
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 177
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 178
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 179
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 180
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 181
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 182
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 183
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 184
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 185
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 186
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 187
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 188
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 189
+
+sea_day12.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 190
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 191
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 192
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 194
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 195
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 196
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 197
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 198
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 199
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 200
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 201
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 202
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 203
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 204
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 205
+
+sea_day13.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 206
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 207
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 208
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 209
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 210
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 230
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 231
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 232
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 233
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 234
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 235
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 236
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 237
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 238
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 239
+
+sea_day14.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 240
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 241
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 242
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 243
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 244
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 245
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 246
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 248
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 249
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 250
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 251
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 252
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 253
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 254
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 255
+
+sea_day15.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 256
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 257
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 258
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 259
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 260
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 261
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 262
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 263
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 264
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 266
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 267
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 268
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 269
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 270
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 271
+
+sea_day16.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 272
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 273
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 274
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 275
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 276
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 277
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 278
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 279
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 280
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 281
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 282
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 283
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 284
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 285
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 286
+
+sea_day17.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 287
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 288
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 289
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 290
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 291
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 292
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 293
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 294
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 295
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 296
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 297
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 0
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 1
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 2
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 3
+
+sea_day18.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 4
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 5
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 6
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 7
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 8
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 9
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 10
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 11
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 12
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 86
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 87
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 88
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 89
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 90
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 91
+
+sea_day19.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1834
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 92
+sea_day
+  rotate: false
+  xy: 0, 1703
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 93
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 94
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 95
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 96
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 97
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 98
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 99
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 100
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 101
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 102
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 212
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 213
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 214
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 215
+
+sea_day20.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sea_day
+  rotate: false
+  xy: 0, 1572
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 216
+sea_day
+  rotate: false
+  xy: 0, 1441
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 217
+sea_day
+  rotate: false
+  xy: 0, 1310
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 218
+sea_day
+  rotate: false
+  xy: 0, 1179
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 219
+sea_day
+  rotate: false
+  xy: 0, 1048
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 220
+sea_day
+  rotate: false
+  xy: 0, 917
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 221
+sea_day
+  rotate: false
+  xy: 0, 786
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 222
+sea_day
+  rotate: false
+  xy: 0, 655
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 223
+sea_day
+  rotate: false
+  xy: 0, 524
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 224
+sea_day
+  rotate: false
+  xy: 0, 393
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 225
+sea_day
+  rotate: false
+  xy: 0, 262
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 226
+sea_day
+  rotate: false
+  xy: 0, 131
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 227
+sea_day
+  rotate: false
+  xy: 0, 0
+  size: 1024, 130
+  orig: 1024, 130
+  offset: 0, 0
+  index: 228

@@ -27,8 +27,10 @@ public class Assets implements Disposable, AssetErrorListener {
     public AssetMusic music;
     public AssetGirlBlack girlBlack;
     public AssetGameBackground gameBackgroung;
-
+    public AssetGirlRed girlRed;
+    public AssetGirlBlondy girlBlondy;
     private AssetManager assetManager;
+    public AssetSeaDay sea_day;
 
     // singleton: prevent instantiation from other classes
     private Assets() {
@@ -52,6 +54,9 @@ public class Assets implements Disposable, AssetErrorListener {
             music = new AssetMusic(assetManager);
             girlBlack = new AssetGirlBlack(assetManager);
             gameBackgroung = new AssetGameBackground(assetManager);
+            girlRed = new AssetGirlRed(assetManager);
+            girlBlondy = new AssetGirlBlondy(assetManager);
+            sea_day = new AssetSeaDay(assetManager);
 
             //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
 
@@ -68,8 +73,7 @@ public class Assets implements Disposable, AssetErrorListener {
     }
 
     /**
-     * Prepare loading assets.
-     * to continue load, call getProgress() until it'll returns 1.0f (it means 100% load)
+     * Prepare loading assets. to continue load, call getProgress() until it'll returns 1.0f (it means 100% load)
      *
      * @param assetManager
      */
@@ -90,20 +94,16 @@ public class Assets implements Disposable, AssetErrorListener {
         //        }
 
         // load texture atlases
-        assetManager.load("images/girl_black_anim_0.txt", TextureAtlas.class);
-        //        assetManager.load("images/girl_black_anim_1.txt", TextureAtlas.class);
-        //        assetManager.load("images/girl_black_anim_2.txt", TextureAtlas.class);
+        assetManager.load("images/black.pack", TextureAtlas.class);
+        assetManager.load("images/red.pack", TextureAtlas.class);
+        assetManager.load("images/blondy.pack", TextureAtlas.class);
+        assetManager.load("images/cocos.pack", TextureAtlas.class);
+        assetManager.load("images/ace.pack", TextureAtlas.class);
+        assetManager.load("images/sea_day.pack", TextureAtlas.class);
+
         //
-        //        assetManager.load("images/girl_orange_anim_0.atlas", TextureAtlas.class);
-        //        assetManager.load("images/girl_orange_anim_1.atlas", TextureAtlas.class);
-        //        assetManager.load("images/girl_orange_anim_2.atlas", TextureAtlas.class);
-        //
-        //        assetManager.load("images/girl_red_anim_0.atlas", TextureAtlas.class);
-        //        assetManager.load("images/girl_red_anim_1.atlas", TextureAtlas.class);
-        //        assetManager.load("images/girl_red_anim_2.atlas", TextureAtlas.class);
-        //
-        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
-        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
+        assetManager.load("images/main/mainfon_0.atlas", TextureAtlas.class);
+        assetManager.load("images/main/mainfon_1.atlas", TextureAtlas.class);
     }
 
     @Override

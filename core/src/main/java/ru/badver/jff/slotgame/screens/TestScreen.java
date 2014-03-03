@@ -8,9 +8,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import ru.badver.jff.slotgame.game.GameController;
-import ru.badver.jff.slotgame.game.actors.GameBackgroundActor;
-import ru.badver.jff.slotgame.game.actors.GameFrameActor;
-import ru.badver.jff.slotgame.game.actors.GirlBlackActor;
+import ru.badver.jff.slotgame.game.actors.*;
 import ru.badver.jff.slotgame.util.Constants;
 import ru.badver.jff.slotgame.util.GameState;
 import ru.badver.jff.slotgame.util.States;
@@ -57,10 +55,25 @@ public class TestScreen extends AbstractGameScreen {
         backgroundImage.setSize(stage.getWidth(), stage.getHeight());
         GameFrameActor gameFrame = new GameFrameActor();
         gameFrame.setSize(stage.getWidth(), stage.getHeight());
+        SeaDayActor seaDayActor = new SeaDayActor();
 
-        GirlBlackActor girlBlack = new GirlBlackActor();
-        girlBlack.setOrigin(girlBlack.getWidth() / 2, girlBlack.getHeight() / 2);
-        girlBlack.setPosition(Constants.VIEWPORT_WIDTH/2,Constants.VIEWPORT_HEIGHT/2);
+        Actor[][] actors=new Actor[5][3];
+
+//        GirlBlackActor girlBlack = new GirlBlackActor();
+//        girlBlack.setOrigin(girlBlack.getWidth() / 2, girlBlack.getHeight() / 2);
+//        girlBlack.setPosition(Constants.SYMBOL_COLUMN[1], Constants.SYMBOL_LINE[1]);
+
+//        GirlRedActor girlRed = new GirlRedActor();
+//        girlRed.setOrigin(girlRed.getWidth() / 2, girlRed.getHeight() / 2);
+//        girlRed.setPosition(Constants.SYMBOL_COLUMN[0], Constants.SYMBOL_LINE[1]);
+
+        for (int i=0;i<5;i++) {
+            for (int j=0;j<3;j++) {
+                actors[i][j] = new GirlRedActor();
+                actors[i][j].setOrigin(actors[i][j].getWidth() / 2, actors[i][j].getHeight() / 2);
+                actors[i][j].setPosition(Constants.SYMBOL_COLUMN[i], Constants.SYMBOL_LINE[j]);
+            }
+        }
 
 
 
@@ -68,9 +81,19 @@ public class TestScreen extends AbstractGameScreen {
 
         // add layers
         stage.addActor(backgroundImage);
-        stage.addActor(gameFrame);
-        stage.addActor(girlBlack);
 
+        stage.addActor(seaDayActor);
+
+
+        for (Actor[] column : actors) {
+            for (Actor line : column) {
+                stage.addActor(line);
+            }
+        }
+//        stage.addActor(girlBlack);
+//        stage.addActor(girlRed);
+
+        stage.addActor(gameFrame);
     }
 
     @Override

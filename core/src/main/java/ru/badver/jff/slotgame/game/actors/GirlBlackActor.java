@@ -5,21 +5,20 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import ru.badver.jff.slotgame.game.assets.Assets;
+import ru.badver.jff.slotgame.util.Constants;
 
 /**
  * Created by user on 03.03.14.
  */
 public class GirlBlackActor extends Actor {
     private float stateTime;
-    private float angle;
     private TextureRegion reg;
 
     public GirlBlackActor() {
         super();
         reg = Assets.instance.girlBlack.girlBlack;
-        setSize(reg.getRegionWidth(), reg.getRegionHeight());
+        setSize(Constants.SYMBOL_SIZE,Constants.SYMBOL_SIZE);
         setOrigin(reg.getRegionWidth() / 2, reg.getRegionHeight() / 2);
-        angle=0;
     }
 
     @Override
@@ -36,10 +35,5 @@ public class GirlBlackActor extends Actor {
     public void act(float delta) {
         super.act(delta);
         stateTime += delta;
-        angle = MathUtils.clamp(++angle, 0f, 360f);
-        if (angle==360f) {
-            angle = 0;
-        }
-        setRotation(angle);
     }
 }

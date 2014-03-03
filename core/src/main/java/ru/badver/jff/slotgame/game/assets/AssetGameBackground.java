@@ -13,10 +13,10 @@ public class AssetGameBackground {
 
     public AssetGameBackground(AssetManager am) {
         // picture
-        TextureAtlas textureAtlas = am.get("images/mainfon_0.atlas", TextureAtlas.class);
+        TextureAtlas textureAtlas = am.get("images/main/mainfon_0.atlas", TextureAtlas.class);
         image = textureAtlas.findRegion("mainfon");
 
         // picture
-        frame = am.get("images/mainfon_1.atlas", TextureAtlas.class).findRegion("frame_mainfon");
+        frame = am.get("images/main/mainfon_1.atlas", TextureAtlas.class).findRegion("frame_mainfon");
     }
 }

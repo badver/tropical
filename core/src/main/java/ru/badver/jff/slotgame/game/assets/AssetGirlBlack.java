@@ -15,16 +15,14 @@ public class AssetGirlBlack {
 
     public AssetGirlBlack(AssetManager am) {
         // picture
-        TextureAtlas textureAtlas = am.get("images/girl_black_anim_0.txt", TextureAtlas.class);
-        girlBlack = textureAtlas.findRegion("000");
+        TextureAtlas textureAtlas = am.get("images/black.pack", TextureAtlas.class);
+        girlBlack = textureAtlas.findRegion("black");
 
         // Animation:
-        Array<TextureAtlas.AtlasRegion> regions = textureAtlas.findRegions("000");
+        Array<TextureAtlas.AtlasRegion> regions = textureAtlas.findRegions("black");
         TextureAtlas.AtlasRegion region = regions.first();
-        for (int i = 0; i < 10; i++)
-            regions.insert(0, region);
 
         animGirlBlack = new Animation(1.0f / 20.0f, regions,
-                Animation.LOOP);
+                Animation.LOOP_PINGPONG);
     }
 }
