@@ -23,10 +23,8 @@ public class LoadScreen extends AbstractGameScreen {
 
     private static final String TAG = "LOAD SCREEN ";
     private TextureAtlas textureAtlas;
-    private Stage stage;
     private AssetManager loadScreenAssetManager;
     private float loadPercent;
-    private OrthographicCamera camera;
 
     public LoadScreen(DirectedGame game, AssetManager loadScreenAssetManager) {
         super(game);
@@ -63,7 +61,7 @@ public class LoadScreen extends AbstractGameScreen {
             GameState.instance.setState(States.LOADED);
             Assets.instance.finishInit();
             ScreenTransition transition = ScreenTransitionFade.init(1.0f);
-            game.setScreen(new GameScreen(game), transition);
+            game.setScreen(new TestScreen(game), transition);
         }
     }
 
@@ -84,10 +82,6 @@ public class LoadScreen extends AbstractGameScreen {
 
     @Override
     public void show() {
-        stage = new Stage(Constants.VIEWPORT_WIDTH, Constants.VIEWPORT_HEIGHT); // set virtual space
-        camera = new OrthographicCamera(); // set camera
-        camera.position.set(stage.getWidth() / 2, stage.getHeight() / 2, 0); // center camera
-        stage.setCamera(camera); // assign camera to stage
 
         // place layers
         buildStage();

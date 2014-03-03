@@ -1,6 +1,7 @@
 package ru.badver.jff.slotgame.screens;
 
 import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -8,7 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import ru.badver.jff.slotgame.screens.transitions.ScreenTransition;
 
-public abstract class DirectedGame implements ApplicationListener {
+public abstract class DirectedGame extends Game {
 
     private SpriteBatch batch;
     private FrameBuffer currFbo;

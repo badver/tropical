@@ -80,27 +80,27 @@ public class Assets implements Disposable, AssetErrorListener {
         // load music
         assetManager.load("music/music.ogg", Music.class);
 
-//        // load sounds
-//        for (int i = 1; i <= 5; i++) {
-//            assetManager.load("sounds/bar/bar_start_" + i + ".ogg", Sound.class);
-//            assetManager.load("sounds/bar/bar_stop_" + i + ".ogg", Sound.class);
-//        }
+        //        // load sounds
+        //        for (int i = 1; i <= 5; i++) {
+        //            assetManager.load("sounds/bar/bar_start_" + i + ".ogg", Sound.class);
+        //            assetManager.load("sounds/bar/bar_stop_" + i + ".ogg", Sound.class);
+        //        }
 
         // load texture atlases
         assetManager.load("images/girl_black_anim_0.txt", TextureAtlas.class);
-//        assetManager.load("images/girl_black_anim_1.txt", TextureAtlas.class);
-//        assetManager.load("images/girl_black_anim_2.txt", TextureAtlas.class);
-//
-//        assetManager.load("images/girl_orange_anim_0.atlas", TextureAtlas.class);
-//        assetManager.load("images/girl_orange_anim_1.atlas", TextureAtlas.class);
-//        assetManager.load("images/girl_orange_anim_2.atlas", TextureAtlas.class);
-//
-//        assetManager.load("images/girl_red_anim_0.atlas", TextureAtlas.class);
-//        assetManager.load("images/girl_red_anim_1.atlas", TextureAtlas.class);
-//        assetManager.load("images/girl_red_anim_2.atlas", TextureAtlas.class);
-//
-//        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
-//        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
+        //        assetManager.load("images/girl_black_anim_1.txt", TextureAtlas.class);
+        //        assetManager.load("images/girl_black_anim_2.txt", TextureAtlas.class);
+        //
+        //        assetManager.load("images/girl_orange_anim_0.atlas", TextureAtlas.class);
+        //        assetManager.load("images/girl_orange_anim_1.atlas", TextureAtlas.class);
+        //        assetManager.load("images/girl_orange_anim_2.atlas", TextureAtlas.class);
+        //
+        //        assetManager.load("images/girl_red_anim_0.atlas", TextureAtlas.class);
+        //        assetManager.load("images/girl_red_anim_1.atlas", TextureAtlas.class);
+        //        assetManager.load("images/girl_red_anim_2.atlas", TextureAtlas.class);
+        //
+        //        assetManager.load("images/mainfon_0.atlas", TextureAtlas.class);
+        //        assetManager.load("images/mainfon_1.atlas", TextureAtlas.class);
     }
 
     @Override
@@ -268,20 +268,20 @@ public class Assets implements Disposable, AssetErrorListener {
      */
     public class AssetGirlBlack {
         public final TextureRegion girlBlack;
-        //        public final Animation animGirlBlack;
+        public final Animation animGirlBlack;
 
         public AssetGirlBlack(AssetManager am) {
             TextureAtlas textureAtlas = am.get("images/girl_black_anim_0.txt", TextureAtlas.class);
-            girlBlack = textureAtlas.findRegion("014");
+            girlBlack = textureAtlas.findRegion("000");
 
             // Animation:
-            //            Array<AtlasRegion> regions = textureAtlas.findRegions("0");
-            //            AtlasRegion region = regions.first();
-            //            for (int i = 0; i < 10; i++)
-            //                regions.insert(0, region);
-            //
-            //            animGirlBlack = new Animation(1.0f / 20.0f, regions,
-            //                    Animation.LOOP_PINGPONG);
+            Array<AtlasRegion> regions = textureAtlas.findRegions("000");
+            AtlasRegion region = regions.first();
+            for (int i = 0; i < 10; i++)
+                regions.insert(0, region);
+
+            animGirlBlack = new Animation(1.0f / 20.0f, regions,
+                    Animation.LOOP);
         }
     }
 }
