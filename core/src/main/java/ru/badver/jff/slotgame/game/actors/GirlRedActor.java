@@ -13,6 +13,7 @@ import ru.badver.jff.slotgame.util.Constants;
 public class GirlRedActor extends Actor {
     private float stateTime;
     private TextureRegion reg;
+    private boolean isAnimated = false;
 
     public GirlRedActor() {
         super();
@@ -25,7 +26,12 @@ public class GirlRedActor extends Actor {
     public void draw(Batch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
 
-        reg = Assets.instance.girlRed.animGirlRed.getKeyFrame(stateTime, true);
+        if (!isAnimated) {
+            reg = Assets.instance.girlRed.girlRed;
+        } else {
+            reg = Assets.instance.girlRed.animGirlRed.getKeyFrame(stateTime, true);
+        }
+
 
         batch.draw(reg, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(),
                 getScaleY(), getRotation());

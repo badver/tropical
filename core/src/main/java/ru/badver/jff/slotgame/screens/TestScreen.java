@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
@@ -14,6 +13,7 @@ import ru.badver.jff.slotgame.game.GameController;
 import ru.badver.jff.slotgame.game.actors.GameBackgroundActor;
 import ru.badver.jff.slotgame.game.actors.GameFrameActor;
 import ru.badver.jff.slotgame.game.actors.GirlBlackActor;
+import ru.badver.jff.slotgame.game.actors.GirlRedActor;
 import ru.badver.jff.slotgame.util.Constants;
 import ru.badver.jff.slotgame.util.GameState;
 import ru.badver.jff.slotgame.util.States;
@@ -55,68 +55,6 @@ public class TestScreen extends AbstractGameScreen {
         GameState.instance.setState(States.GAME);
     }
 
-    private void buildStage() {
-        GameBackgroundActor backgroundImage = new GameBackgroundActor();
-        backgroundImage.setSize(stage.getWidth(), stage.getHeight());
-        GameFrameActor gameFrame = new GameFrameActor();
-        gameFrame.setSize(stage.getWidth(), stage.getHeight());
-        //        SeaDayActor seaDayActor = new SeaDayActor();
-
-        Reel group = new Reel();
-        for (int i = 0; i < 3; i++) {
-            Actor newActor = new GirlBlackActor();
-            newActor.setOrigin(newActor.getWidth() / 2, newActor.getHeight() / 2);
-            newActor.setPosition(0, Constants.SYMBOL_LINE[i]);
-            group.addActor(newActor);
-        }
-        group.setPosition(Constants.SYMBOL_COLUMN[0], 0);
-
-
-        group.addAction(Actions.forever(
-                Actions.sequence(Actions.moveBy(0, -800, 2, Interpolation.linear), Actions.moveBy(0, 800))));
-
-        group.setSize(110, 800);
-
-        //        Actor[][] actors = new Actor[5][3];
-
-        //        GirlBlackActor girlBlack = new GirlBlackActor();
-        //        girlBlack.setOrigin(girlBlack.getWidth() / 2, girlBlack.getHeight() / 2);
-        //        girlBlack.setPosition(Constants.SYMBOL_COLUMN[1], Constants.SYMBOL_LINE[1]);
-
-        //        GirlRedActor girlRed = new GirlRedActor();
-        //        girlRed.setOrigin(girlRed.getWidth() / 2, girlRed.getHeight() / 2);
-        //        girlRed.setPosition(Constants.SYMBOL_COLUMN[0], Constants.SYMBOL_LINE[1]);
-
-        //        for (int i = 0; i < 5; i++) {
-        //            for (int j = 0; j < 3; j++) {
-        //                actors[i][j] = new GirlRedActor();
-        //                actors[i][j].setOrigin(actors[i][j].getWidth() / 2, actors[i][j].getHeight() / 2);
-        //                actors[i][j].setPosition(Constants.SYMBOL_COLUMN[i], Constants.SYMBOL_LINE[j]);
-        //            }
-        //        }
-
-
-        stage.clear();
-
-        // add layers
-        stage.addActor(backgroundImage);
-
-        //        stage.addActor(seaDayActor);
-
-        stage.addActor(group);
-
-
-        //        for (Actor[] column : actors) {
-        //            for (Actor line : column) {
-        //                stage.addActor(line);
-        //            }
-        //        }
-        //        stage.addActor(girlBlack);
-        //        stage.addActor(girlRed);
-
-        stage.addActor(gameFrame);
-    }
-
     @Override
     public void hide() {
         Gdx.input.setCatchBackKey(false);
@@ -140,20 +78,102 @@ public class TestScreen extends AbstractGameScreen {
         super.dispose();
     }
 
+    private void buildStage() {
+        GameBackgroundActor backgroundImage = new GameBackgroundActor();
+        backgroundImage.setSize(stage.getWidth(), stage.getHeight());
+
+        GameFrameActor gameFrame = new GameFrameActor();
+        gameFrame.setSize(stage.getWidth(), stage.getHeight());
+
+        // reels
+        Reel reel_1 = new Reel(Constants.SYMBOL_COLUMN[0], 95, 5);
+        Reel reel_2 = new Reel(Constants.SYMBOL_COLUMN[1], 95, 5);
+        Reel reel_3 = new Reel(Constants.SYMBOL_COLUMN[2], 95, 5);
+        Reel reel_4 = new Reel(Constants.SYMBOL_COLUMN[3], 95, 5);
+        Reel reel_5 = new Reel(Constants.SYMBOL_COLUMN[4], 95, 5);
+
+        stage.clear();
+
+        // add layers
+        stage.addActor(backgroundImage); // add background
+
+        // add reels:
+        stage.addActor(reel_1);
+        stage.addActor(reel_2);
+        stage.addActor(reel_3);
+        stage.addActor(reel_4);
+        stage.addActor(reel_5);
+
+        // add frame on top to cover all
+        stage.addActor(gameFrame);
+    }
+
     private class Reel extends Group {
+        Rectangle scissors;
+        Rectangle clipBounds;
+        private float moveSpeed = 20;
+        private float height = 588;
+
+        public Reel(float posX, float posY) {
+            this(posX, posY, 20f);
+        }
+
+        public Reel(float posX, float posY, float moveSpeed) {
+            super();
+            this.moveSpeed = moveSpeed;
+
+            // fill with symbols
+            for (int i = 0; i < 5; i++) {
+                Actor newActor;
+                if (i % 2 == 0) {
+                    newActor = new GirlRedActor();
+                } else {
+                    newActor = new GirlBlackActor();
+                }
+                newActor.setOrigin(newActor.getWidth() / 2, newActor.getHeight() / 2);
+                newActor.setPosition(0, Constants.SYMBOL_LINE[i]);
+                this.addActor(newActor);
+            }
+
+            this.setPosition(posX, posY);
+            this.setSize(Constants.SYMBOL_SIZE, height);
+
+            //Create a scissor rectangle that covers my Actor.
+            scissors = new Rectangle();
+
+//            Rectangle clipBounds = new Rectangle(9, 100, 150, 600);
+            clipBounds = new Rectangle(getX(), getY(), getWidth(), getHeight());
+        }
+
+        @Override
+        public void act(float delta) {
+            super.act(delta);
+
+            Actor[] actors = this.getChildren().begin();
+            for (int i = 0, n = this.getChildren().size; i < n; i++) {
+                actors[i].addAction(Actions.moveBy(0, -1 * moveSpeed, 1f));
+//                actors[i].moveBy(0, -1 * moveSpeed);
+
+                if (actors[i].getTop() < 0) {
+                    actors[i].setY(this.getTop()+ actors[i].getY() );
+                }
+            }
+            this.getChildren().end();
+        }
 
         @Override
         public void draw(Batch batch, float parentAlpha) {
 
-            //Create a scissor rectangle that covers my Actor.
-            Rectangle scissors = new Rectangle();
-            //            Rectangle clipBounds = new Rectangle(getX(),getY(),getWidth(),getHeight());
-            Rectangle clipBounds = new Rectangle(9, 100, 150, 600);
+            // debug:
+//            System.out.println("Reel pos: x=" + getX() + " y=" + getY() + " w=" + getWidth() + " h=" + getHeight());
 
             ScissorStack.calculateScissors(camera, batch.getTransformMatrix(), clipBounds, scissors);
 
             //Make sure nothing is clipped before we want it to.
             batch.flush();
+
+            // push clipping
+            ScissorStack.pushScissors(scissors);
 
             // draw as usual
             super.draw(batch, parentAlpha);

@@ -2,7 +2,6 @@ package ru.badver.jff.slotgame.game.actors;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import ru.badver.jff.slotgame.game.assets.Assets;
 import ru.badver.jff.slotgame.util.Constants;
@@ -13,11 +12,12 @@ import ru.badver.jff.slotgame.util.Constants;
 public class GirlBlackActor extends Actor {
     private float stateTime;
     private TextureRegion reg;
+    private boolean isAnimated = false;
 
     public GirlBlackActor() {
         super();
         reg = Assets.instance.girlBlack.girlBlack;
-        setSize(Constants.SYMBOL_SIZE,Constants.SYMBOL_SIZE);
+        setSize(Constants.SYMBOL_SIZE, Constants.SYMBOL_SIZE);
         setOrigin(reg.getRegionWidth() / 2, reg.getRegionHeight() / 2);
     }
 
@@ -25,7 +25,11 @@ public class GirlBlackActor extends Actor {
     public void draw(Batch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
 
-        reg = Assets.instance.girlBlack.animGirlBlack.getKeyFrame(stateTime, true);
+        if (!isAnimated) {
+            reg = Assets.instance.girlBlack.girlBlack;
+        } else {
+            reg = Assets.instance.girlBlack.animGirlBlack.getKeyFrame(stateTime, true);
+        }
 
         batch.draw(reg, getX(), getY(), getOriginX(), getOriginY(), getWidth(), getHeight(), getScaleX(),
                 getScaleY(), getRotation());

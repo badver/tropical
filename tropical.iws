@@ -72,37 +72,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestScreen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/TestScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.0" vertical-offset="654" max-vertical-offset="2052">
+            <state line="149" column="29" selection-start="4472" selection-end="4472" vertical-scroll-proportion="0.49532712" vertical-offset="2040" max-vertical-offset="3114">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssetGirlRed.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlRed.java">
+      <file leaf-file-name="GirlBlackActor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlBlackActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="58" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="34" column="44" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssetGirlBlondy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlondy.java">
+      <file leaf-file-name="DesktopLauncher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/desktop/src/main/java/ru/badver/jff/slotgame/DesktopLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="58" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="18" column="0" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssetGirlBlack.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlack.java">
+      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.53271025" vertical-offset="0" max-vertical-offset="642">
+            <state line="12" column="66" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
               <folding />
             </state>
           </provider>
@@ -137,22 +137,22 @@
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/GameState.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/GameStates.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/SlotGame.java" />
-        <option value="$PROJECT_DIR$/desktop/src/main/java/ru/badver/jff/slotgame/DesktopLauncher.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/AbstractGameScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/GameScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/Assets.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/LoadScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGameBackground.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlBlackActor.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlRedActor.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/Constants.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/Assets.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetSeaDay.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/SeaDayActor.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/TestScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlRed.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlondy.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlack.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/Constants.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlBlackActor.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlRedActor.java" />
+        <option value="$PROJECT_DIR$/desktop/src/main/java/ru/badver/jff/slotgame/DesktopLauncher.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/TestScreen.java" />
       </list>
     </option>
   </component>
@@ -208,14 +208,66 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="tropical" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slotgame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -432,6 +484,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -804,11 +858,13 @@
       <workItem from="1393528078791" duration="367000" />
       <workItem from="1393530293180" duration="2368000" />
       <workItem from="1393869639369" duration="4761000" />
+      <workItem from="1394048794757" duration="17000" />
+      <workItem from="1394048821706" duration="7370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64706000" />
+    <option name="totallyTimeSpent" value="72093000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -851,7 +907,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3369803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932165" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21033014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18104367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -888,6 +944,48 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlondy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="58" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/TestScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlRed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="58" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlondy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="58" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/LoadScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="41" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="3744">
@@ -968,11 +1066,6 @@
     <entry file="file://$PROJECT_DIR$/android/project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/ru/badver/jff/slotgame/TexPack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
       </provider>
     </entry>
     <entry file="uml://JAVA/ru.badver.jff.slotgame.SlotGame">
@@ -1066,16 +1159,6 @@
         <state line="9" column="11" selection-start="199" selection-end="199" vertical-scroll-proportion="0.25233644" vertical-offset="0" max-vertical-offset="642" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/ru/badver/jff/slotgame/DesktopLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="53" selection-start="653" selection-end="653" vertical-scroll-proportion="0.44859812" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/SlotGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="823" selection-end="823" vertical-scroll-proportion="0.31478536" vertical-offset="54" max-vertical-offset="756" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/AbstractGameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="51" selection-start="896" selection-end="896" vertical-scroll-proportion="0.5093697" vertical-offset="151" max-vertical-offset="738" />
@@ -1109,27 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlBlackActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="59" selection-start="626" selection-end="626" vertical-scroll-proportion="0.4064516" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlRedActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.47663552" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetSeaDay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.6448598" vertical-offset="0" max-vertical-offset="642">
@@ -1158,13 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/TestScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.0" vertical-offset="654" max-vertical-offset="2052">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlRed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="58" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
@@ -1181,7 +1236,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/assets/AssetGirlBlack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.53271025" vertical-offset="0" max-vertical-offset="642">
+        <state line="23" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/core/libs/gdx-sources.jar!/com/badlogic/gdx/scenes/scene2d/utils/ScissorStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.33333334" vertical-offset="704" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/core/libs/gdx-sources.jar!/com/badlogic/gdx/scenes/scene2d/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="8" selection-start="2013" selection-end="2139" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="6336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/SlotGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="781" selection-end="781" vertical-scroll-proportion="0.3364486" vertical-offset="54" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlRedActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="505" selection-end="505" vertical-scroll-proportion="0.28037384" vertical-offset="0" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="66" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/ru/badver/jff/slotgame/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/game/actors/GirlBlackActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="44" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/badver/jff/slotgame/screens/TestScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="29" selection-start="4472" selection-end="4472" vertical-scroll-proportion="0.49532712" vertical-offset="2040" max-vertical-offset="3114">
           <folding />
         </state>
       </provider>

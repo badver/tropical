@@ -9,12 +9,13 @@ public class DesktopLauncher {
     public static void main(String[] arg) {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 
-        config.useGL20 = true;
         config.fullscreen = false;
         config.title = Constants.TITLE;
         config.width = Constants.SCREEN_WIDTH;
         config.height = Constants.SCREEN_HEIGHT;
         config.resizable = true;
+//        config.foregroundFPS = 50;
+//        config.backgroundFPS = 0;
 
         new LwjglApplication(new SlotGame(), config);
     }
