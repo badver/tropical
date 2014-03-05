@@ -12,5 +12,5 @@ public class Constants {
 
     public static final int SYMBOL_SIZE = 158; // x and y size of symbols
     public static final int[] SYMBOL_COLUMN = {9, 165, 322, 478, 634};
-    public static final int[] SYMBOL_LINE = {100,250,400};
+    public static final int[] SYMBOL_LINE = {98,265,430};
 }

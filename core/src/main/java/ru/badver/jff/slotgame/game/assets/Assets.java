@@ -56,7 +56,7 @@ public class Assets implements Disposable, AssetErrorListener {
             gameBackgroung = new AssetGameBackground(assetManager);
             girlRed = new AssetGirlRed(assetManager);
             girlBlondy = new AssetGirlBlondy(assetManager);
-            sea_day = new AssetSeaDay(assetManager);
+//            sea_day = new AssetSeaDay(assetManager);
 
             //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
 
@@ -99,7 +99,7 @@ public class Assets implements Disposable, AssetErrorListener {
         assetManager.load("images/blondy.pack", TextureAtlas.class);
         assetManager.load("images/cocos.pack", TextureAtlas.class);
         assetManager.load("images/ace.pack", TextureAtlas.class);
-        assetManager.load("images/sea_day.pack", TextureAtlas.class);
+//        assetManager.load("images/sea_day.pack", TextureAtlas.class);
 
         //
         assetManager.load("images/main/mainfon_0.atlas", TextureAtlas.class);
