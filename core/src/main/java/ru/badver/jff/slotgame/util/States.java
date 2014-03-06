@@ -9,6 +9,8 @@ public enum States {
     LOADED, // finish loading
     PAUSED,
     GAME,  // main game
+    ROLLING, // rolling the reels
+    STOPPING, // stopping reels
     RISK,  // risk game
     BONUS  // bonus game
 }

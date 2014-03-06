@@ -27,7 +27,7 @@ public class TestScreen extends AbstractGameScreen {
 
     public TestScreen(DirectedGame game) {
         super(game);
-        inputProcessor = new GameController();
+        inputProcessor = new GameController(game);
     }
 
     @Override
@@ -86,11 +86,16 @@ public class TestScreen extends AbstractGameScreen {
         gameFrame.setSize(stage.getWidth(), stage.getHeight());
 
         // reels
-        Reel reel_1 = new Reel(Constants.SYMBOL_COLUMN[0], 95, 5);
-        Reel reel_2 = new Reel(Constants.SYMBOL_COLUMN[1], 95, 5);
-        Reel reel_3 = new Reel(Constants.SYMBOL_COLUMN[2], 95, 5);
-        Reel reel_4 = new Reel(Constants.SYMBOL_COLUMN[3], 95, 5);
-        Reel reel_5 = new Reel(Constants.SYMBOL_COLUMN[4], 95, 5);
+        Reel reel_1 = new Reel(Constants.SYMBOL_COLUMN[0], 95, 1f);
+        reel_1.setName("REEL 1");
+        Reel reel_2 = new Reel(Constants.SYMBOL_COLUMN[1], 95, 2f);
+        reel_2.setName("REEL 2");
+        Reel reel_3 = new Reel(Constants.SYMBOL_COLUMN[2], 95, 3f);
+        reel_3.setName("REEL 3");
+        Reel reel_4 = new Reel(Constants.SYMBOL_COLUMN[3], 95, 4f);
+        reel_4.setName("REEL 4");
+        Reel reel_5 = new Reel(Constants.SYMBOL_COLUMN[4], 95, 5f);
+        reel_5.setName("REEL 5");
 
         stage.clear();
 
@@ -112,7 +117,8 @@ public class TestScreen extends AbstractGameScreen {
         Rectangle scissors;
         Rectangle clipBounds;
         private float moveSpeed = 20;
-        private float height = 588;
+        private float height = 588; // 588
+        private float clipHeight = 500;
 
         public Reel(float posX, float posY) {
             this(posX, posY, 20f);
@@ -132,30 +138,73 @@ public class TestScreen extends AbstractGameScreen {
                 }
                 newActor.setOrigin(newActor.getWidth() / 2, newActor.getHeight() / 2);
                 newActor.setPosition(0, Constants.SYMBOL_LINE[i]);
+                newActor.setName("ACTOR");
                 this.addActor(newActor);
             }
 
+            // set position and size of reel
             this.setPosition(posX, posY);
             this.setSize(Constants.SYMBOL_SIZE, height);
 
             //Create a scissor rectangle that covers my Actor.
             scissors = new Rectangle();
-
-//            Rectangle clipBounds = new Rectangle(9, 100, 150, 600);
-            clipBounds = new Rectangle(getX(), getY(), getWidth(), getHeight());
+            clipBounds = new Rectangle(getX(), getY(), getWidth(), clipHeight);
         }
 
         @Override
         public void act(float delta) {
             super.act(delta);
 
-            Actor[] actors = this.getChildren().begin();
-            for (int i = 0, n = this.getChildren().size; i < n; i++) {
-                actors[i].addAction(Actions.moveBy(0, -1 * moveSpeed, 1f));
-//                actors[i].moveBy(0, -1 * moveSpeed);
+            //            // do nothing if not rolling
+            //            if (GameState.instance.getState() == States.GAME) {
+            //                return;
+            //            }
 
+            // if rolling:
+            // else set new positions
+            Actor[] actors = this.getChildren().begin();
+
+            // current highest Y
+            float top = 0;
+            int index = 0;
+
+            // find max Y coord of actors (top of reel's actors)
+            for (int i = 0, n = this.getChildren().size; i < n; i++) {
+                float actTop = actors[i].getTop();
+                if (actTop > top) {
+                    top = actTop;
+                    index = i;
+                }
+            }
+
+            // prepare stop
+            if (GameState.instance.getState() == States.STOPPING) {
+                // set name for last element
+                actors[index].setName("LAST");
+                // TODO !!!!!!!!!!
+//                System.out.println(actors[index]+" name: "+actors[index].getName());
+            }
+
+            System.out.println("Reel: "+this.getName()+", Index: "+index+" Name: "+actors[index]);
+
+            // add move to actors
+            for (int i = 0, n = this.getChildren().size; i < n; i++) {
+                // if out of reel box move actor to top
                 if (actors[i].getTop() < 0) {
-                    actors[i].setY(this.getTop()+ actors[i].getY() );
+
+                    // if LAST stop animation
+                    if (GameState.instance.getState() == States.STOPPING && actors[i].getName().equals("LAST")) {
+                        System.out.println("LAST !!!!!");
+                        // if last stop rolling
+                        actors[i].setName("ACTOR");
+                        GameState.instance.setState(States.GAME);
+                    }
+                    actors[i].setY(top);
+                }
+
+                if (GameState.instance.getState() == States.ROLLING) {
+                    // set moving
+                    actors[i].addAction(Actions.moveBy(0, -1 * moveSpeed, 1f));
                 }
             }
             this.getChildren().end();
@@ -163,10 +212,7 @@ public class TestScreen extends AbstractGameScreen {
 
         @Override
         public void draw(Batch batch, float parentAlpha) {
-
-            // debug:
-//            System.out.println("Reel pos: x=" + getX() + " y=" + getY() + " w=" + getWidth() + " h=" + getHeight());
-
+            // calculate scissors
             ScissorStack.calculateScissors(camera, batch.getTransformMatrix(), clipBounds, scissors);
 
             //Make sure nothing is clipped before we want it to.
