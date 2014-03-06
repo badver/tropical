@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 public class AbstractActor extends Actor {
     private TextureRegion image;
     private float stateTime;
+    private boolean isLast;
 
     @Override
     public void act(float delta) {

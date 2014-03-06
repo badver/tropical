@@ -2,7 +2,6 @@ package ru.badver.jff.slotgame.game.actors;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import ru.badver.jff.slotgame.game.assets.Assets;
 import ru.badver.jff.slotgame.util.Constants;
@@ -18,7 +17,7 @@ public class GirlRedActor extends Actor {
     public GirlRedActor() {
         super();
         reg = Assets.instance.girlRed.girlRed;
-        setSize(Constants.SYMBOL_SIZE, Constants.SYMBOL_SIZE);
+        setSize(Constants.SYMBOL_WIDTH, Constants.SYMBOL_WIDTH);
         setOrigin(reg.getRegionWidth() / 2, reg.getRegionHeight() / 2);
     }
 

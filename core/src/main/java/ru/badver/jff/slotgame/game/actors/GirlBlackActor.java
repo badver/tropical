@@ -17,7 +17,7 @@ public class GirlBlackActor extends Actor {
     public GirlBlackActor() {
         super();
         reg = Assets.instance.girlBlack.girlBlack;
-        setSize(Constants.SYMBOL_SIZE, Constants.SYMBOL_SIZE);
+        setSize(Constants.SYMBOL_WIDTH, Constants.SYMBOL_WIDTH);
         setOrigin(reg.getRegionWidth() / 2, reg.getRegionHeight() / 2);
     }
 
