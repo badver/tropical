@@ -6,7 +6,7 @@ import com.badlogic.gdx.Gdx;
  * Created by wish on 23.02.14.
  */
 public class GameState {
-    public static final String TAG = "GAME STATE ";
+    public static final String    TAG      = "GAME STATE ";
     public static final GameState instance = new GameState();
     private States gameState;
 

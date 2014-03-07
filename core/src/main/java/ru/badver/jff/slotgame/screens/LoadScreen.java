@@ -22,7 +22,7 @@ public class LoadScreen extends AbstractGameScreen {
     private static final String TAG = "LOAD SCREEN ";
     private TextureAtlas textureAtlas;
     private AssetManager loadScreenAssetManager;
-    private float loadPercent;
+    private float        loadPercent;
 
     public LoadScreen(DirectedGame game, AssetManager loadScreenAssetManager) {
         super(game);

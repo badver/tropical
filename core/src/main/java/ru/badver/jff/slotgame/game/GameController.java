@@ -37,13 +37,13 @@ public class GameController implements InputProcessor {
                     GameState.instance.setState(States.ROLLING);
                 }
                 break;
-//            case Input.Keys.ENTER:
-//                if (GameState.instance.getState() == States.ROLLING) {
-//                    GameState.instance.setState(States.STOPPING);
-//                } else {
-//                    GameState.instance.setState(States.ROLLING);
-//                }
-//                break;
+            //            case Input.Keys.ENTER:
+            //                if (GameState.instance.getState() == States.ROLLING) {
+            //                    GameState.instance.setState(States.STOPPING);
+            //                } else {
+            //                    GameState.instance.setState(States.ROLLING);
+            //                }
+            //                break;
             default:
                 break;
         }

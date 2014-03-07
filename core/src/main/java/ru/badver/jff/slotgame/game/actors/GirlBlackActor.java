@@ -6,11 +6,8 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import ru.badver.jff.slotgame.game.assets.Assets;
 import ru.badver.jff.slotgame.util.Constants;
 
-/**
- * Created by user on 03.03.14.
- */
 public class GirlBlackActor extends Actor {
-    private float stateTime;
+    private float         stateTime;
     private TextureRegion reg;
     private boolean isAnimated = false;
 
@@ -19,6 +16,14 @@ public class GirlBlackActor extends Actor {
         reg = Assets.instance.girlBlack.girlBlack;
         setSize(Constants.SYMBOL_WIDTH, Constants.SYMBOL_WIDTH);
         setOrigin(reg.getRegionWidth() / 2, reg.getRegionHeight() / 2);
+    }
+
+    public boolean isAnimated() {
+        return isAnimated;
+    }
+
+    public void setAnimated(boolean isAnimated) {
+        this.isAnimated = isAnimated;
     }
 
     @Override

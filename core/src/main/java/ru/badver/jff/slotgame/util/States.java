@@ -8,7 +8,7 @@ public enum States {
     LOADING, // load assets
     LOADED, // finish loading
     PAUSED,
-    GAME,  // main game
+    DEFAULT,  // main game
     START_ROLLING, // before roll
     ROLLING, // rolling the reels
     STOPPING, // stopping reels

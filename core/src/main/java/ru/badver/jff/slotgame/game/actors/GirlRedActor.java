@@ -10,7 +10,7 @@ import ru.badver.jff.slotgame.util.Constants;
  * Created by user on 03.03.14.
  */
 public class GirlRedActor extends Actor {
-    private float stateTime;
+    private float         stateTime;
     private TextureRegion reg;
     private boolean isAnimated = false;
 

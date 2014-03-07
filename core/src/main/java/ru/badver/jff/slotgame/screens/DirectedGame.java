@@ -1,34 +1,30 @@
 package ru.badver.jff.slotgame.screens;
 
-import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import ru.badver.jff.slotgame.screens.transitions.ScreenTransition;
 
 public abstract class DirectedGame extends Game {
 
-    private SpriteBatch batch;
-    private FrameBuffer currFbo;
+    private SpriteBatch        batch;
+    private FrameBuffer        currFbo;
     private AbstractGameScreen currScreen;
-    private boolean init;
-    private FrameBuffer nextFbo;
+    private boolean            init;
+    private FrameBuffer        nextFbo;
     private AbstractGameScreen nextScreen;
-    private ScreenTransition screenTransition;
-    private float t;
+    private ScreenTransition   screenTransition;
+    private float              t;
 
     @Override
     public abstract void create();
 
     @Override
     public void resize(int width, int height) {
-        if (currScreen != null)
-            currScreen.resize(width, height);
-        if (nextScreen != null)
-            nextScreen.resize(width, height);
+        if (currScreen != null) { currScreen.resize(width, height); }
+        if (nextScreen != null) { nextScreen.resize(width, height); }
     }
 
     @Override
@@ -39,19 +35,16 @@ public abstract class DirectedGame extends Game {
 
         if (nextScreen == null) {
             // no ongoing transition
-            if (currScreen != null)
-                currScreen.render(deltaTime);
+            if (currScreen != null) { currScreen.render(deltaTime); }
         } else {
             // ongoing transition
             float duration = 0;
-            if (screenTransition != null)
-                duration = screenTransition.getDuration();
+            if (screenTransition != null) { duration = screenTransition.getDuration(); }
             // update progress of ongoing transition
             t = Math.min(t + deltaTime, duration);
             if (screenTransition == null || t >= duration) {
                 // no transition effect set or transition has just finished
-                if (currScreen != null)
-                    currScreen.hide();
+                if (currScreen != null) { currScreen.hide(); }
                 nextScreen.resume();
                 // enable input for next screen
                 Gdx.input.setInputProcessor(nextScreen.getInputProcessor());
@@ -62,8 +55,7 @@ public abstract class DirectedGame extends Game {
             } else {
                 // render screens to FBOs
                 currFbo.begin();
-                if (currScreen != null)
-                    currScreen.render(deltaTime);
+                if (currScreen != null) { currScreen.render(deltaTime); }
                 currFbo.end();
                 nextFbo.begin();
                 nextScreen.render(deltaTime);
@@ -78,23 +70,19 @@ public abstract class DirectedGame extends Game {
 
     @Override
     public void pause() {
-        if (currScreen != null)
-            currScreen.pause();
+        if (currScreen != null) { currScreen.pause(); }
     }
 
     @Override
     public void resume() {
-        if (currScreen != null)
-            currScreen.resume();
+        if (currScreen != null) { currScreen.resume(); }
     }
 
     @Override
     public void dispose() {
-        if (currScreen != null)
-            currScreen.hide();
+        if (currScreen != null) { currScreen.hide(); }
 
-        if (nextScreen != null)
-            nextScreen.hide();
+        if (nextScreen != null) { nextScreen.hide(); }
 
         if (init) {
             currFbo.dispose();
@@ -125,8 +113,7 @@ public abstract class DirectedGame extends Game {
         nextScreen.show(); // activate next screen
         nextScreen.resize(w, h);
         nextScreen.render(0); // let screen update() once
-        if (currScreen != null)
-            currScreen.pause();
+        if (currScreen != null) { currScreen.pause(); }
         nextScreen.pause();
         Gdx.input.setInputProcessor(null); // disable input
         this.screenTransition = screenTransition;

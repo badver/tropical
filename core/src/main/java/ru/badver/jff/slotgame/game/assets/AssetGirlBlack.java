@@ -11,7 +11,7 @@ import com.badlogic.gdx.utils.Array;
  */
 public class AssetGirlBlack {
     public final TextureRegion girlBlack;
-    public final Animation animGirlBlack;
+    public final Animation     animGirlBlack;
 
     public AssetGirlBlack(AssetManager am) {
         // picture

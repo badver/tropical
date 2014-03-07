@@ -6,16 +6,13 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import ru.badver.jff.slotgame.game.assets.Assets;
 import ru.badver.jff.slotgame.util.Constants;
 
-/**
- * Created by user on 03.03.14.
- */
 public class GameFrameActor extends Actor {
     private TextureRegion image;
 
     public GameFrameActor() {
         super();
         image = new TextureRegion(Assets.instance.gameBackgroung.frame);
-//        setSize(image.getRegionWidth(), image.getRegionHeight());
+        //        setSize(image.getRegionWidth(), image.getRegionHeight());
         setSize(Constants.VIEWPORT_WIDTH, Constants.VIEWPORT_HEIGHT);
     }
 

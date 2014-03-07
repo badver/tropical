@@ -40,7 +40,8 @@ public class SlotGame extends DirectedGame {
             Gdx.app.debug(TAG, "asset: " + a);
         Gdx.app.debug(TAG, "----------------------\n");
 
-        ScreenTransitionSlice transit = ScreenTransitionSlice.init(0.5f, ScreenTransitionSlice.UP_DOWN, 20, Interpolation.pow5Out);
+        ScreenTransitionSlice transit = ScreenTransitionSlice.init(0.5f, ScreenTransitionSlice.UP_DOWN, 20,
+                Interpolation.pow5Out);
         setScreen(new LoadScreen(this, loadManager), transit);
     }
 }

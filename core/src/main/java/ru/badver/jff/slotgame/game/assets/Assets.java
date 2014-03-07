@@ -15,22 +15,22 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 
 public class Assets implements Disposable, AssetErrorListener {
-    public static final String TAG = "ASSETS ";
+    public static final String TAG      = "ASSETS ";
     public static final Assets instance = new Assets();
 
-    public AssetBunny bunny;
-    public AssetGoldCoin goldCoin;
-    public AssetFeather feather;
-    public AssetLevelDecoration levelDecoration;
-    public AssetFonts fonts;
-    public AssetSounds sounds;
-    public AssetMusic music;
-    public AssetGirlBlack girlBlack;
-    public AssetGameBackground gameBackgroung;
-    public AssetGirlRed girlRed;
-    public AssetGirlBlondy girlBlondy;
-    private AssetManager assetManager;
-    public AssetSeaDay sea_day;
+    public  AssetBunny           bunny;
+    public  AssetGoldCoin        goldCoin;
+    public  AssetFeather         feather;
+    public  AssetLevelDecoration levelDecoration;
+    public  AssetFonts           fonts;
+    public  AssetSounds          sounds;
+    public  AssetMusic           music;
+    public  AssetGirlBlack       girlBlack;
+    public  AssetGameBackground  gameBackgroung;
+    public  AssetGirlRed         girlRed;
+    public  AssetGirlBlondy      girlBlondy;
+    private AssetManager         assetManager;
+    public  AssetSeaDay          sea_day;
 
     // singleton: prevent instantiation from other classes
     private Assets() {
@@ -56,7 +56,7 @@ public class Assets implements Disposable, AssetErrorListener {
             gameBackgroung = new AssetGameBackground(assetManager);
             girlRed = new AssetGirlRed(assetManager);
             girlBlondy = new AssetGirlBlondy(assetManager);
-//            sea_day = new AssetSeaDay(assetManager);
+            //            sea_day = new AssetSeaDay(assetManager);
 
             //        TextureAtlas atlas = assetManager.get(Constants.GAME_ATLAS);
 
@@ -99,7 +99,7 @@ public class Assets implements Disposable, AssetErrorListener {
         assetManager.load("images/blondy.pack", TextureAtlas.class);
         assetManager.load("images/cocos.pack", TextureAtlas.class);
         assetManager.load("images/ace.pack", TextureAtlas.class);
-//        assetManager.load("images/sea_day.pack", TextureAtlas.class);
+        //        assetManager.load("images/sea_day.pack", TextureAtlas.class);
 
         //
         assetManager.load("images/main/mainfon_0.atlas", TextureAtlas.class);
@@ -183,10 +183,10 @@ public class Assets implements Disposable, AssetErrorListener {
     // just for example
     public class AssetBunny {
         public final AtlasRegion head;
-        public final Animation animNormal;
-        public final Animation animCopterTransform;
-        public final Animation animCopterTransformBack;
-        public final Animation animCopterRotate;
+        public final Animation   animNormal;
+        public final Animation   animCopterTransform;
+        public final Animation   animCopterTransformBack;
+        public final Animation   animCopterRotate;
 
         public AssetBunny(TextureAtlas atlas) {
             head = atlas.findRegion("bunny_head");
@@ -251,7 +251,7 @@ public class Assets implements Disposable, AssetErrorListener {
     // example texture and animation
     public class AssetGoldCoin {
         public final AtlasRegion goldCoin;
-        public final Animation animGoldCoin;
+        public final Animation   animGoldCoin;
 
         public AssetGoldCoin(TextureAtlas atlas) {
             goldCoin = atlas.findRegion("item_gold_coin");

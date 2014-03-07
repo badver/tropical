@@ -10,14 +10,14 @@ import ru.badver.jff.slotgame.util.GameState;
 import ru.badver.jff.slotgame.util.States;
 
 public abstract class AbstractGameScreen implements Screen {
-    protected DirectedGame game;
+    protected DirectedGame       game;
     protected OrthographicCamera camera;
-    protected Stage stage;
-    protected boolean paused;
+    protected Stage              stage;
+    protected boolean            paused;
 
     public AbstractGameScreen(DirectedGame game) {
         this.game = game;
-        stage = new Stage(Constants.VIEWPORT_WIDTH, Constants.VIEWPORT_HEIGHT); // set virtual space
+        stage = new Stage(Constants.VIEWPORT_WIDTH, Constants.VIEWPORT_HEIGHT, true); // set virtual space
         camera = new OrthographicCamera(); // set camera
         camera.position.set(stage.getWidth() / 2, stage.getHeight() / 2, 0); // center camera
         stage.setCamera(camera); // assign camera to stage
@@ -51,11 +51,11 @@ public abstract class AbstractGameScreen implements Screen {
         Gdx.app.debug("AbstractGS ", "resume");
         States state = GameState.instance.getState();
         if (state != States.START && state != States.LOADING) {
-//            Assets.instance.init(new AssetManager());
+            //            Assets.instance.init(new AssetManager());
         }
     }
 
     public void dispose() {
-//        Assets.instance.dispose();
+        //        Assets.instance.dispose();
     }
 }

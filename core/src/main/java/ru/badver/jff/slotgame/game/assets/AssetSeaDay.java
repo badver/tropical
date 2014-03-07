@@ -11,7 +11,7 @@ import com.badlogic.gdx.utils.Array;
  */
 public class AssetSeaDay {
     public final TextureRegion image;
-    public final Animation animation;
+    public final Animation     animation;
 
     public AssetSeaDay(AssetManager am) {
         // picture
