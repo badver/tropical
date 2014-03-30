@@ -11,9 +11,10 @@ public class Constants {
     public static final int SCREEN_HEIGHT = 600;
 
     public static final int   SYMBOL_WIDTH  = 158; // width of symbols
-    public static final int   SYMBOL_HEIGHT = 167; // height of symbols
-    public static final int   SYMBOL_SHIFT  = 167; // shift of symbols
-    //    public static final int[] SYMBOL_LINE = {0,167,334,501,668};
+    public static final int   SYMBOL_HEIGHT = 166; // height of symbols
+
+    public static final int   SYMBOL_SHIFT  = 166; // shift of symbols
+
     public static final int[] SYMBOL_LINE   = {SYMBOL_SHIFT * 0,
             SYMBOL_SHIFT * 1,
             SYMBOL_SHIFT * 2,

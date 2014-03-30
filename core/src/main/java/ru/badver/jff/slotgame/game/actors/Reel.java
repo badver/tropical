@@ -56,7 +56,7 @@ public class Reel extends Group {
             } else {
                 newActor = new GirlBlackActor();
             }
-            newActor.setOrigin(newActor.getWidth() / 2, newActor.getHeight() / 2);
+//            newActor.setOrigin(newActor.getWidth() / 2, newActor.getHeight() / 2);
             newActor.setPosition(0, Constants.SYMBOL_LINE[i]);
             this.addActor(newActor);
         }
@@ -91,9 +91,6 @@ public class Reel extends Group {
             }
         }
 
-        // it corrects offset, it's a magic :) // TODO why 9 ?
-        top += 9;
-
         // add move to actors
         for (int i = 0, n = this.getChildren().size; i < n; i++) {
 
@@ -126,8 +123,8 @@ public class Reel extends Group {
                     }
                 } else {
                     // set stopping
-                    actors[i].addAction(Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, 1, Interpolation.bounceOut));
-                    //                        GameState.instance.setState(States.DEFAULT);
+                    actors[i].addAction(Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, 10, Interpolation.bounceIn));
+                    GameState.instance.setState(States.DEFAULT); // TODO ???
                 }
             }
         }

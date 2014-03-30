@@ -5,6 +5,5 @@ package ru.badver.jff.slotgame.gamemath;
  */
 public interface SlotMath {
     public int getWinAmount();
-
     public WinType getWinType();
 }

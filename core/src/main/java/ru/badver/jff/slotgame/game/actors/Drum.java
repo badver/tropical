@@ -41,7 +41,6 @@ public class Drum extends Group {
         // TODO change states of reels instead of game
 
         if (GameState.instance.getState() == States.STOPPING) {
-
             GameState.instance.setState(States.DEFAULT);
         }
     }
