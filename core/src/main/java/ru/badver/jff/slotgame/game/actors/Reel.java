@@ -13,6 +13,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.ScissorStack;
 import ru.badver.jff.slotgame.util.Constants;
 import ru.badver.jff.slotgame.util.ReelState;
 
+import java.util.Random;
+
 public class Reel extends Group {
     private final float duration;
     private final float timeOffset;
@@ -47,15 +49,27 @@ public class Reel extends Group {
     }
 
     private void addSymbols() {
+        Random random = new Random();
         // fill with symbols
         for (int i = 0; i < 5; i++) {
-            Actor newActor;
-            if (i % 2 == 0) {
-                newActor = new GirlRedActor();
-            } else {
-                newActor = new GirlBlackActor();
+            AbstractSymbol newActor;
+
+            switch (random.nextInt(3)) {
+                case 0:
+                    newActor = new GirlRedActor();
+                    break;
+                case 1:
+                    newActor = new GirlBlackActor();
+                    break;
+                case 2:
+                    newActor = new GirlBlondyActor();
+                    break;
+                default:
+                    newActor = new GirlRedActor();
+                    break;
             }
             newActor.setPosition(0, Constants.SYMBOL_LINE[i]);
+//            newActor.setAnimated(true);
             this.addActor(newActor);
         }
     }
