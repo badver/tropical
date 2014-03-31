@@ -30,16 +30,15 @@ public class Assets implements Disposable, AssetErrorListener {
     public  AssetGirlRed         girlRed;
     public  AssetGirlBlondy      girlBlondy;
     private AssetManager         assetManager;
-    public  AssetSeaDay          sea_day;
 
     // singleton: prevent instantiation from other classes
     private Assets() {
     }
 
     /**
-     * update load progress and return progress from  0.0f to 1.0f ( 0% - 100% )
+     * update load progress
      *
-     * @return
+     * @return loading progress 0.0f - 1.0f
      */
     public float getProgress() {
         assetManager.update();

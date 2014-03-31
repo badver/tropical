@@ -1,15 +1,18 @@
 package ru.badver.jff.slotgame.game.actors;
 
+import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import ru.badver.jff.slotgame.util.Constants;
 import ru.badver.jff.slotgame.util.GameState;
+import ru.badver.jff.slotgame.util.ReelState;
 import ru.badver.jff.slotgame.util.States;
 
 public class Drum extends Group {
     private final float duration = 0.08f; // time to move 1 symbol
 
     public Drum() {
-        this(0.5f, 1f, 1.5f, 2f, 2.5f);
+        this(Constants.REEL_TIME_OFFSET * 1, Constants.REEL_TIME_OFFSET * 2, Constants.REEL_TIME_OFFSET * 3,
+                Constants.REEL_TIME_OFFSET * 4, Constants.REEL_TIME_OFFSET * 5);
     }
 
     public Drum(float reel1, float reel2, float reel3, float reel4, float reel5) {
@@ -32,16 +35,49 @@ public class Drum extends Group {
         this.addActor(reel_3);
         this.addActor(reel_4);
         this.addActor(reel_5);
+
+        setReelsState(ReelState.STOP);
+    }
+
+    private void setReelsState(ReelState reelState) {
+        Actor[] actors = this.getChildren().begin();
+        Reel reel;
+        for (int i = 0, n = this.getChildren().size; i < n; i++) {
+            reel = (Reel) actors[i];
+            reel.setState(reelState);
+        }
+        this.getChildren().end();
     }
 
     @Override
     public void act(float delta) {
         super.act(delta);
 
-        // TODO change states of reels instead of game
-
-        if (GameState.instance.getState() == States.STOPPING) {
-            GameState.instance.setState(States.DEFAULT);
+        switch (GameState.instance.getState()) {
+            case START:
+                break;
+            case LOADING:
+                break;
+            case LOADED:
+                break;
+            case PAUSED:
+                break;
+            case DEFAULT:
+                break;
+            case START_ROLLING:
+                setReelsState(ReelState.ROLL);
+                GameState.instance.setState(States.ROLLING);
+                break;
+            case ROLLING:
+                break;
+            case STOPPING:
+                setReelsState(ReelState.BEGIN_STOP);
+                GameState.instance.setState(States.DEFAULT);
+                break;
+            case RISK:
+                break;
+            case BONUS:
+                break;
         }
     }
 }

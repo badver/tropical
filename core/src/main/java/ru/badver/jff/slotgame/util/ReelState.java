@@ -8,5 +8,5 @@ public enum ReelState {
     ROLL, // rolling
     BEGIN_ROLL, // just before rolling, prepare Reel
     BEGIN_STOP, // just before stopping, prepare Stop
-    STOPPING_ // finish rolling (do time delay, effects, etc.)
+    STOPPING // finish rolling (do time delay, effects, etc.)
 }

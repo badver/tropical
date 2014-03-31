@@ -1,5 +1,6 @@
 package ru.badver.jff.slotgame.game.actors;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Interpolation;
@@ -10,9 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.utils.ScissorStack;
 import ru.badver.jff.slotgame.util.Constants;
-import ru.badver.jff.slotgame.util.GameState;
 import ru.badver.jff.slotgame.util.ReelState;
-import ru.badver.jff.slotgame.util.States;
 
 public class Reel extends Group {
     private final float duration;
@@ -56,7 +55,6 @@ public class Reel extends Group {
             } else {
                 newActor = new GirlBlackActor();
             }
-//            newActor.setOrigin(newActor.getWidth() / 2, newActor.getHeight() / 2);
             newActor.setPosition(0, Constants.SYMBOL_LINE[i]);
             this.addActor(newActor);
         }
@@ -64,10 +62,6 @@ public class Reel extends Group {
 
     public Reel(float posX, float posY, float duration) {
         this(posX, posY, duration, 0);
-    }
-
-    public ReelState getState() {
-        return state;
     }
 
     @Override
@@ -80,6 +74,42 @@ public class Reel extends Group {
         // check Actors (move out of reel)
         Actor[] actors = this.getChildren().begin();
 
+        // add move to actors
+        for (int i = 0, n = this.getChildren().size; i < n; i++) {
+
+            // if out of reel box move actor to top
+            if (actors[i].getTop() < -Constants.SYMBOL_SHIFT) {
+                actors[i].setY(findMaxTop(actors));
+            }
+
+            switch (getState()) {
+                case STOP:
+                    break;
+                case ROLL:
+                    time = timeOffset; // reset time
+                    moveActorDown(actors[i]);
+                    break;
+                case BEGIN_ROLL:
+                    break;
+                case BEGIN_STOP:
+                    if (time > 0) {
+                        moveActorDown(actors[i]);
+                    } else {
+                        moveLast(actors[i]);
+                        if (i == n - 1) { // just move last element
+                            setState(ReelState.STOPPING);
+                        }
+                    }
+                    break;
+                case STOPPING:
+                    setState(ReelState.STOP);
+                    break;
+            }
+        }
+        this.getChildren().end();
+    }
+
+    private float findMaxTop(Actor[] actors) {
         // current highest Y
         float top = 0;
 
@@ -90,45 +120,28 @@ public class Reel extends Group {
                 top = actTop;
             }
         }
+        return top;
+    }
 
-        // add move to actors
-        for (int i = 0, n = this.getChildren().size; i < n; i++) {
+    public ReelState getState() {
+        return state;
+    }
 
-            // if out of reel box move actor to top
-            if (actors[i].getTop() < -Constants.SYMBOL_SHIFT) {
-                actors[i].setY(top);
-            }
+    public void setState(ReelState state) {
+        this.state = state;
+        Gdx.app.debug(this.getName(), "Reel state changed to " + state);
+    }
 
-            if (GameState.instance.getState() == States.ROLLING) {
-                // set moving
-                if (actors[i].getActions().size < 1) {
-                    actors[i].addAction(
-                            Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, duration, Interpolation.linear));
-                }
-                time = timeOffset;
-            }
-
-            if (time > 0) {
-                if (actors[i].getActions().size < 1) {
-                    actors[i].addAction(Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, duration, Interpolation.linear));
-                }
-            }
-
-            if (GameState.instance.getState() == States.STOPPING) {
-
-                if (time > 0) {
-                    if (actors[i].getActions().size < 1) {
-                        actors[i].addAction(
-                                Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, duration, Interpolation.linear));
-                    }
-                } else {
-                    // set stopping
-                    actors[i].addAction(Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, 10, Interpolation.bounceIn));
-                    GameState.instance.setState(States.DEFAULT); // TODO ???
-                }
-            }
+    private void moveActorDown(Actor actor) {
+        // set move down
+        if (actor.getActions().size < 1) {
+            actor.addAction(
+                    Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, duration, Interpolation.linear));
         }
-        this.getChildren().end();
+    }
+
+    private void moveLast(Actor actor) {
+        actor.addAction(Actions.moveBy(0, -1 * Constants.SYMBOL_SHIFT, duration*4, Interpolation.bounceOut));
     }
 
     @Override
@@ -154,6 +167,11 @@ public class Reel extends Group {
         ScissorStack.popScissors();
     }
 
+    /**
+     * Set stage and camera for the reel (used for clipping)
+     *
+     * @param stage
+     */
     @Override
     protected void setStage(Stage stage) {
         super.setStage(stage);

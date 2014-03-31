@@ -34,7 +34,7 @@ public class GameController implements InputProcessor {
                 if (GameState.instance.getState() == States.ROLLING) {
                     GameState.instance.setState(States.STOPPING);
                 } else {
-                    GameState.instance.setState(States.ROLLING);
+                    GameState.instance.setState(States.START_ROLLING);
                 }
                 break;
             //            case Input.Keys.ENTER:
